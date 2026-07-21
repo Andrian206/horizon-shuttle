@@ -37,3 +37,38 @@ def chat_workspace(
         user_type="business"
     )
     return ChatResponse(reply=result["reply"], sources=result["sources"])
+
+@router.post("/chat")
+def chat_workspace(
+    request: ChatRequest,
+    username: str = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    # Create or get session
+    if not request.session_id:
+        session = ChatSession(
+            user_id=get_user_id(username),
+            mode=request.mode,
+            user_type="business"
+        )
+        db.add(session)
+        db.commit()
+        session_id = session.id
+    else:
+        session_id = request.session_id
+    
+    # RAG query
+    result = rag_query(
+        query=request.message,
+        mode=request.mode,
+        user_type="business"
+    )
+    
+    # Save messages to DB
+    # ... (save user message + assistant reply)
+    
+    return {
+        "reply": result["reply"],
+        "session_id": session_id,
+        "sources": result.get("sources", [])
+    }
