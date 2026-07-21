@@ -1,0 +1,66 @@
+# ==========================================
+# Horizon Shuttle AI - .gitignore
+# ==========================================
+
+# --- Environment & Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.tmp
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Database ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Testing ---
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Docker ---
+docker-compose.override.yml
+
+# --- Misc ---
+.mypy_cache/
+.ruff_cache/
