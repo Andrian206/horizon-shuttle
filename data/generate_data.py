@@ -2,7 +2,10 @@
 # Create sample knowledge base documents for the user
 
 import os
-os.makedirs('/home/aeuvro/Code/horizon-shuttle/data', exist_ok=True)
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+os.makedirs(BASE_DIR, exist_ok=True)
 
 documents = {
     "01_company_profile.txt": """HORIZON SHUTTLE — COMPANY PROFILE
@@ -720,11 +723,12 @@ SOP 7: PERAWATAN ARMADA
 """
 }
 
-# Write all files
-for filename, content in documents.items():
-    filepath = f'/home/aeuvro/Code/horizon-shuttle/data/{filename}'
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(content)
-    print(f"✅ {filename} — {len(content)} chars, ~{content.count(chr(10))} lines")
+if __name__ == "__main__":
+    # Write all files
+    for filename, content in documents.items():
+        filepath = BASE_DIR / filename
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"✅ {filename} — {len(content)} chars, ~{content.count(chr(10))} lines")
 
-print(f"\n🎉 Total 12 files created in /home/aeuvro/Code/horizon-shuttle/data")
+    print(f"\n🎉 Total 12 files created in {BASE_DIR}")
