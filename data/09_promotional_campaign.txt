@@ -1,32 +1,78 @@
-# Promotional Campaign — Horizon Shuttle
+HORIZON SHUTTLE — PROMOTIONAL CAMPAIGNS
 
-## Campaign Aktif
+PROMO AKTIF
 
-### 1. "Liburan Lebih Seru dengan Horizon"
-- **Periode**: Juni-Agustus 2026
-- **Diskon**: 20% untuk rute tujuan wisata (Bandung-Yogyakarta, Surabaya-Malang)
-- **Media**: Instagram, TikTok, email blast
-- **Hasil (Juni)**: +35% penjualan rute wisata
+1. PROMO LIBURAN (Musim Libur Sekolah & Lebaran)
+Periode: 15 Juni – 15 Juli, 1–15 Ramadhan
+Diskon: 20% untuk semua kelas
+Kode Promo: LIBURAN20
+Syarat:
+- Pemesanan minimal 3 hari sebelum keberangkatan
+- Berlaku untuk rute Bandung-Jakarta dan Bandung-Cirebon
+- Tidak berlaku untuk hari H keberangkatan
 
-### 2. "Corporate Travel Solution"
-- **Target**: Perusahaan di Jakarta, Bandung, Surabaya
-- **Penawaran**: Diskon khusus 15% untuk pemesanan ≥20 tiket/bulan
-- **Media**: LinkedIn, email marketing, direct sales
-- **Lead terkumpul**: 45 prospek korporasi
+2. PROMO MAHASISWA
+Periode: Berlaku terus (ongoing)
+Diskon: 25% untuk kelas Economy
+Kode Promo: MAHASISWA25
+Syarat:
+- Menunjukkan kartu mahasiswa aktif saat check-in
+- Berlaku untuk rute Bandung-Jakarta
+- Maksimal 2 tiket per mahasiswa per trip
+- Tidak berlaku saat peak season (Lebaran, Natal)
 
-### 3. "Horizon Ramadhan"
-- **Periode**: Maret 2027 (tahunan)
-- **Fokus**: Mudik Lebaran
-- **Early Bird**: Diskon 20% untuk pemesanan H-14
-- **Paket Keluarga**: Diskon tambahan 10% untuk pembelian 4 tiket sekaligus
+3. PROMO WEEKEND
+Periode: Setiap Jumat–Minggu
+Diskon: 15% untuk kelas Business
+Kode Promo: WEEKEND15
+Syarat:
+- Pemesanan minimal 1 hari sebelum keberangkatan
+- Berlaku untuk semua rute
+- Berlaku untuk keberangkatan Jumat, Sabtu, Minggu
 
-## Campaign Mendatang
-- **"Back to School"** (Agustus 2026): Diskon pelajar 30%
-- **"Weekend Getaway"** (September 2026): Paket shuttle + hotel
-- **"Year-End Sale"** (Desember 2026): Diskon hingga 40%
+4. PROMO AKHIR TAHUN
+Periode: 20 Desember – 5 Januari
+Diskon: 30% untuk semua kelas
+Kode Promo: TAHUNBARU30
+Syarat:
+- Pemesanan minimal 7 hari sebelum keberangkatan
+- Berlaku untuk semua rute
+- Kuota terbatas (500 tiket)
 
-## Performance Summary Q2 2026
-- Total penjualan: Rp 4,2 Miliar (+22% QoQ)
-- Pelanggan baru: 3.540 (+18%)
-- Tingkat kepuasan: 4.5/5
-- Rata-rata pemesanan/hari: 187 tiket
+5. PROMO BUNDLE KELUARGA
+Periode: Berlaku terus
+Diskon: Beli 4 tiket, bayar 3 (kelas Economy & Business)
+Kode Promo: KELUARGA4PAY3
+Syarat:
+- Minimal 4 penumpang dalam 1 pemesanan
+- Berlaku untuk semua rute
+- Anak di atas 3 tahun dihitung sebagai 1 penumpang
+
+6. PROMO EARLY BIRD
+Periode: Berlaku terus
+Diskon: 10% untuk pemesanan 14 hari sebelum keberangkatan
+Kode Promo: EARLYBIRD10
+Syarat:
+- Pemesanan minimal 14 hari sebelum keberangkatan
+- Berlaku untuk semua kelas dan rute
+- Tidak bisa digabung dengan promo lain
+
+7. PROMO ULANG TAHUN HORIZON
+Periode: 15 Agustus (HUT Horizon Shuttle)
+Diskon: 50% untuk 50 penumpang pertama
+Kode Promo: HUT50
+Syarat:
+- Kuota sangat terbatas (50 tiket)
+- Berlaku untuk semua kelas dan rute
+- 1 tiket per orang
+
+CARA MENGGUNAKAN PROMO
+1. Pilih tiket di website/aplikasi.
+2. Masukkan kode promo saat checkout.
+3. Diskon akan otomatis terpotong.
+4. Selesaikan pembayaran.
+
+CATATAN
+- Promo tidak berlaku untuk hari libur nasional (kecuali dinyatakan).
+- Promo tidak bisa digabung dengan promo lain.
+- Horizon Shuttle berhak mengubah atau menghentikan promo sewaktu-waktu.

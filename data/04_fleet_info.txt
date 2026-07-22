@@ -1,35 +1,55 @@
-# Informasi Armada — Horizon Shuttle
+HORIZON SHUTTLE — FLEET INFORMATION
 
-## Tipe Armada
+Armada Horizon Shuttle selalu dalam kondisi prima dengan perawatan rutin setiap 5.000 km.
 
-### 1. Hino S'elega (Eksekutif)
-- Kapasitas: 31 kursi (2-1 konfigurasi)
-- Fasilitas: Reclining seat 145°, TV pribadi, USB charger, toilet, AC double blower, snack box
-- Cocok untuk: Rute jarak jauh
+1. TOYOTA HIACE
+Kapasitas: 15 penumpang
+Kelas: Economy, Business
+Fasilitas:
+- AC double blower
+- Kursi reclining
+- Audio system
+- Bagasi belakang luas
+- USB charging port
 
-### 2. Hino RN8 (Bisnis)
-- Kapasitas: 39 kursi (2-2 konfigurasi)
-- Fasilitas: Legroom luas, USB charger, AC, WiFi, entertainment system
-- Cocok untuk: Rute menengah dan jauh
+2. ISUZU ELF (LONG)
+Kapasitas: 20 penumpang
+Kelas: Economy, Business
+Fasilitas:
+- AC powerful
+- Kursi reclining dengan footrest
+- TV LED 32 inch
+- Audio system premium
+- Bagasi samping dan belakang
+- USB charging port per kursi
 
-### 3. Isuzu NQR (Ekonomi)
-- Kapasitas: 49 kursi (3-2 konfigurasi)
-- Fasilitas: AC, USB charger, bagasi luas, harga terjangkau
-- Cocok untuk: Rute pendek dan menengah
+3. MEDIUM BUS (MERCEDES-BENZ)
+Kapasitas: 33 penumpang
+Kelas: Business, Executive
+Fasilitas:
+- AC premium dengan ionizer
+- Kursi reclining full (Executive)
+- TV LED per kursi (Executive) / TV LED besar (Business)
+- WiFi onboard
+- Toilet onboard (Executive)
+- Mini pantry (Executive)
+- Bagasi luas di bawah dan belakang
 
-## Armada Khusus
-- **Shuttle Bandara**: Toyota Hiace Premio, 12 kursi
-- **Shuttle Korporasi**: Mercedes-Benz Sprinter, 19 kursi
+4. PREMIUM COASTER (TOYOTA)
+Kapasitas: 25 penumpang
+Kelas: Executive
+Fasilitas:
+- AC premium
+- Kursi full reclining dengan leg rest
+- TV layar sentuh per kursi
+- WiFi high-speed
+- Toilet onboard
+- Mini pantry
+- Bagasi luas
 
-## Perawatan Armada
-- Setiap unit menjalani perawatan rutin setiap 5.000 km
-- Pemeriksaan menyeluruh setiap 10.000 km di bengkel resmi
-- Inspeksi keselamatan sebelum setiap keberangkatan (checklist 32 poin)
-- Penggantian ban setiap 20.000 km
-- Armada di bawah 3 tahun penggunaan
-
-## Jumlah Total Armada Aktif: 52 unit
-- Eksekutif: 15 unit
-- Bisnis: 20 unit
-- Ekonomi: 12 unit
-- Khusus: 5 unit
+Kebijakan Armada:
+- Umur armada maksimal 5 tahun
+- Perawatan rutin setiap 5.000 km
+- Pemeriksaan keamanan harian sebelum keberangkatan
+- Sopir berpengalaman minimal 5 tahun
+- Semua armada dilengkapi GPS tracking

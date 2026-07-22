@@ -1,42 +1,49 @@
-# Customer Reviews — Horizon Shuttle
+HORIZON SHUTTLE — CUSTOMER REVIEWS (DATA DUMMY)
 
-## Testimoni Terbaru (Juni 2026)
+ULASAN POSITIF
 
-**⭐⭐⭐⭐⭐ — Andi Pratama**
-"Pelayanan memuaskan! Armada baru, bersih, AC dingin. Supir ramah dan sopan. Pasti pakai Horizon lagi."
-— Rute Jakarta-Bandung, 28 Juni 2026
+1. "Perjalanan Bandung-Jakarta sangat nyaman. Sopirnya ramah dan profesional. AC dingin, kursi bersih. Pasti naik lagi!" — Rina, 24 tahun, Mahasiswa
 
-**⭐⭐⭐⭐ — Siti Nurhaliza**
-"Tepat waktu. Harga sesuai dengan fasilitas yang didapat. Cuma sayang colokan USB di kursi saya tidak berfungsi."
-— Rute Jakarta-Surabaya, 25 Juni 2026
+2. "Saya sering pakai Horizon Shuttle untuk business trip. Kelas Business worth it banget — reclining seat, WiFi, dan meal box. Recommended!" — Budi, 35 tahun, Karyawan Swasta
 
-**⭐⭐⭐⭐⭐ — Rudi Hartono**
-"Horizon Shuttle jadi andalan saya tiap perjalanan dinas ke Bandung. WiFi kenceng, bisa kerja selama perjalanan."
-— Rute Jakarta-Bandung, 20 Juni 2026
+3. "Pertama kali coba kelas Executive ke Yogyakarta. Pengalaman luar biasa! Kursi hampir flat, ada selimut dan bantal. Tidur nyenyak sepanjang perjalanan." — Siti, 42 tahun, Ibu Rumah Tangga
 
-**⭐⭐⭐ — Dewi Lestari**
-"Pengalaman biasa aja, busnya agak terlambat 15 menit. Tapi kru membantu bawakan koper saya. Fair."
-— Rute Jakarta-Semarang, 15 Juni 2026
+4. "Promo mahasiswa sangat membantu. Harga terjangkau tapi kualitas tetap oke. Terima kasih Horizon Shuttle!" — Andi, 20 tahun, Mahasiswa
 
-**⭐⭐⭐⭐⭐ — Budi Santoso**
-"Baru pertama coba Horizon dan impressed banget. Check-in mudah, bus bersih, supir nyetirnya nyaman. Recommend!"
-— Rute Bandung-Yogyakarta, 12 Juni 2026
+5. "Door-to-door service-nya sangat membantu. Saya tinggal di Cimahi, dijemput di rumah dan diantar sampai tujuan di Jakarta. Praktis!" — Dedi, 38 tahun, Wiraswasta
 
-## Summary Customer Satisfaction (H1 2026)
-- Rating rata-rata: 4.5/5 (dari 2.847 ulasan)
-- Punctuality rate: 87%
-- Response rate keluhan: 94% dalam 24 jam
+6. "Armadanya bersih dan wangi. Terlihat terawat dengan baik. Suka banget sama kebersihannya." — Maya, 29 tahun, Desainer
 
-### Breakdown Rating
-- ⭐⭐⭐⭐⭐: 62%
-- ⭐⭐⭐⭐: 25%
-- ⭐⭐⭐: 8%
-- ⭐⭐: 3%
-- ⭐: 2%
+7. "Customer service responsif. Saya reschedule via WhatsApp dan langsung diproses dalam 10 menit." — Fajar, 31 tahun, Karyawan
 
-### Top Complaints
-1. Delay keberangkatan (35% dari keluhan)
-2. Fasilitas tidak berfungsi (22%)
-3. Keterbatasan bagasi (15%)
-4. Layanan pelanggan lambat (10%)
-5. Lainnya (18%)
+8. "Anak saya suka naik Horizon Shuttle. Ada TV dan snack, jadi dia tidak rewel sepanjang perjalanan." — Lina, 36 tahun, Ibu Rumah Tangga
+
+ULASAN KONSTRUKTIF / NEGATIF
+
+1. "Bus terlambat 30 menit dari jadwal. Tidak ada informasi yang jelas. Mohon diperbaiki komunikasinya." — Ahmad, 28 tahun, Karyawan
+
+2. "AC di kursi saya tidak terlalu dingin. Mungkin perlu dicek maintenance-nya." — Putri, 26 tahun, Freelancer
+
+3. "Sopirnya agak ugal-ugalan. Kecepatan stabil saja sudah cukup, tidak perlu ngebut." — Hendra, 45 tahun, PNS
+
+4. "Toilet di bus tidak bersih. Bau dan tidak ada tissue. Mohon diperhatikan kebersihannya." — Nina, 33 tahun, Karyawan
+
+5. "WiFi di kelas Business lemot banget. Tidak bisa dipakai kerja. Harap diperbaiki." — Rudi, 30 tahun, Programmer
+
+6. "Tempat duduk agak sempit untuk saya yang bertubuh besar. Mungkin perlu pertimbangkan kursi yang lebih lebar." — Bayu, 40 tahun, Pengusaha
+
+7. "Proses refund lama. Sudah 7 hari belum masuk ke rekening. Mohon dipercepat." — Citra, 27 tahun, Guru
+
+8. "Pengumuman keterlambatan baru diberitahu 1 jam sebelum keberangkatan. Saya sudah di jalan. Sebaiknya diberitahu lebih awal." — Yoga, 32 tahun, Karyawan
+
+RINGKASAN SENTIMEN
+- Positif: 78%
+- Netral: 12%
+- Negatif: 10%
+
+TOPIK PALING SERING DIBICARAKAN
+1. Kenyamanan kursi (positif)
+2. Keterlambatan (negatif)
+3. Kebersihan armada (positif & negatif)
+4. Sopir (positif & negatif)
+5. Harga/promo (positif)

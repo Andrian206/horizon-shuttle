@@ -1,38 +1,62 @@
-# Laporan Bisnis — Horizon Shuttle
+HORIZON SHUTTLE — BUSINESS REPORTS (DATA DUMMY)
 
-## Ringkasan Kinerja (H1 2026 — Januari s.d. Juni)
+LAPORAN PENJUALAN BULANAN (JANUARI – JUNI 2026)
 
-### Pendapatan
-| Bulan | Pendapatan | Target | % Tercapai |
-|-------|-----------|--------|-----------|
-| Jan | Rp 1,2 M | Rp 1,1 M | 109% |
-| Feb | Rp 1,0 M | Rp 1,0 M | 100% |
-| Mar | Rp 1,4 M | Rp 1,3 M | 108% |
-| Apr | Rp 1,3 M | Rp 1,2 M | 108% |
-| Mei | Rp 1,5 M | Rp 1,4 M | 107% |
-| Jun | Rp 1,8 M | Rp 1,5 M | 120% |
+Bulan    | Total Tiket | Pendapatan    | Rata-rata per Tiket
+---------|-------------|---------------|--------------------
+Januari  | 2.450       | Rp 612.500.000| Rp 250.000
+Februari | 2.180       | Rp 545.000.000| Rp 250.000
+Maret    | 2.890       | Rp 722.500.000| Rp 250.000
+April    | 3.120       | Rp 780.000.000| Rp 250.000
+Mei      | 3.450       | Rp 862.500.000| Rp 250.000
+Juni     | 3.680       | Rp 920.000.000| Rp 250.000
 
-**Total Pendapatan H1 2026**: Rp 8,2 Miliar (dari target Rp 7,5 Miliar)
-**Rata-rata occupancy rate**: 76%
+Total Semester 1: 17.770 tiket, Rp 4.442.500.000
 
-### Rute Terlaris (by revenue)
-1. Jakarta - Bandung: 28% dari total pendapatan
-2. Jakarta - Surabaya: 22%
-3. Jakarta - Semarang: 15%
-4. Bandung - Yogyakarta: 12%
-5. Surabaya - Malang: 10%
-6. Medan - Padang: 8%
-7. Lainnya: 5%
+OKUPANSI PER RUTE (JUNI 2026)
 
-### Biaya Operasional (Bulan Juni 2026)
-- Bahan bakar: Rp 420 Juta (42%)
-- Gaji awak: Rp 250 Juta (25%)
-- Perawatan armada: Rp 150 Juta (15%)
-- Marketing: Rp 100 Juta (10%)
-- Operasional kantor: Rp 80 Juta (8%)
+Rute              | Kapasitas/Bulan | Terisi | Okupansi
+------------------|-----------------|--------|----------
+Bandung-Jakarta   | 4.500           | 3.890  | 86.4%
+Bandung-Cirebon   | 2.700           | 2.340  | 86.7%
+Bandung-Yogyakarta| 900             | 720    | 80.0%
+Bandung-Semarang  | 900             | 680    | 75.6%
 
-## Proyeksi H2 2026
-- Target revenue: Rp 10 Miliar
-- Rute baru: Jakarta - Bali (mulai Oktober)
-- Penambahan armada: 10 unit (Q3)
-- Ekspansi layanan cargo ke Sumatera
+OKUPANSI PER KELAS (JUNI 2026)
+
+Kelas      | Total Penjualan | Persentase
+-----------|-----------------|------------
+Economy    | 2.208 tiket     | 60.0%
+Business   | 1.104 tiket     | 30.0%
+Executive  | 368 tiket       | 10.0%
+
+RUTE PALING RAMAI (TOP 3 JUNI 2026)
+1. Bandung-Jakarta (pukul 18.00 WIB) — 780 penumpang
+2. Bandung-Jakarta (pukul 06.00 WIB) — 720 penumpang
+3. Bandung-Cirebon (pukul 07.00 WIB) — 650 penumpang
+
+RUTE PALING SEPI (BOTTOM 2 JUNI 2026)
+1. Bandung-Semarang (night trip) — 680 penumpang (75.6% okupansi)
+2. Bandung-Yogyakarta (night trip) — 720 penumpang (80.0% okupansi)
+
+PROMO PALING EFEKTIF (JUNI 2026)
+1. Promo Mahasiswa — 520 tiket terjual
+2. Promo Weekend — 480 tiket terjual
+3. Promo Early Bird — 350 tiket terjual
+
+KELUHAN PELANGGAN (JUNI 2026)
+Kategori          | Jumlah | Persentase
+------------------|--------|------------
+Keterlambatan     | 45     | 35%
+AC tidak dingin   | 28     | 22%
+Kursi tidak nyaman| 20     | 16%
+Sopir kurang ramah| 15     | 12%
+Lainnya           | 19     | 15%
+Total             | 127    | 100%
+
+REKOMENDASI STRATEGIS
+1. Tambah 1 trip Bandung-Jakarta pukul 15.00 (demand tinggi).
+2. Evaluasi rute night trip — pertimbangkan diskon tambahan.
+3. Perbaiki maintenance AC (22% keluhan).
+4. Training sopir customer service (12% keluhan).
+5. Promo Mahasiswa efektif — perluas ke rute Cirebon.

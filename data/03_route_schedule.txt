@@ -1,41 +1,54 @@
-# Jadwal Rute — Horizon Shuttle
+HORIZON SHUTTLE — ROUTE & SCHEDULE
 
-## Rute Aktif (Jadwal Reguler)
+Rute dan Jadwal Keberangkatan Horizon Shuttle:
 
-### Koridor Jakarta — Bandung
-| Keberangkatan | Waktu | Durasi | Kelas |
-|--------------|-------|--------|-------|
-| Jakarta (Gambir) | 06:00, 09:00, 12:00, 15:00, 18:00 | ±3 jam | Eksekutif, Bisnis |
-| Bandung | 06:00, 09:00, 12:00, 15:00, 18:00 | ±3 jam | Eksekutif, Bisnis |
+1. BANDUNG ↔ JAKARTA
+Estimasi perjalanan: 3 jam
+Jadwal keberangkatan dari Bandung:
+- 06.00 WIB — Terminal Leuwi Panjang
+- 09.00 WIB — Terminal Leuwi Panjang
+- 12.00 WIB — Terminal Leuwi Panjang
+- 15.00 WIB — Terminal Leuwi Panjang
+- 18.00 WIB — Terminal Leuwi Panjang
 
-### Koridor Jakarta — Surabaya
-| Keberangkatan | Waktu | Durasi | Kelas |
-|--------------|-------|--------|-------|
-| Jakarta | 07:00, 13:00, 19:00 | ±9 jam | Eksekutif |
-| Surabaya | 07:00, 13:00, 19:00 | ±9 jam | Eksekutif |
+Jadwal keberangkatan dari Jakarta:
+- 06.00 WIB — Terminal Kampung Rambutan
+- 09.00 WIB — Terminal Kampung Rambutan
+- 12.00 WIB — Terminal Kampung Rambutan
+- 15.00 WIB — Terminal Kampung Rambutan
+- 18.00 WIB — Terminal Kampung Rambutan
 
-### Koridor Bandung — Yogyakarta
-| Keberangkatan | Waktu | Durasi | Kelas |
-|--------------|-------|--------|-------|
-| Bandung | 08:00, 14:00 | ±5 jam | Bisnis, Ekonomi |
-| Yogyakarta | 08:00, 14:00 | ±5 jam | Bisnis, Ekonomi |
+Titik jemput (door-to-door) tersedia untuk kelas Business dan Executive.
 
-### Koridor Jakarta — Semarang
-| Keberangkatan | Waktu | Durasi | Kelas |
-|--------------|-------|--------|-------|
-| Jakarta | 06:30, 11:00, 16:30 | ±6 jam | Bisnis, Ekonomi |
-| Semarang | 06:30, 11:00, 16:30 | ±6 jam | Bisnis, Ekonomi |
+2. BANDUNG ↔ CIREBON
+Estimasi perjalanan: 2.5 jam
+Jadwal keberangkatan dari Bandung:
+- 07.00 WIB — Terminal Leuwi Panjang
+- 13.00 WIB — Terminal Leuwi Panjang
+- 17.00 WIB — Terminal Leuwi Panjang
 
-### Koridor Surabaya — Malang
-| Keberangkatan | Waktu | Durasi | Kelas |
-|--------------|-------|--------|-------|
-| Surabaya | 07:00, 10:00, 14:00, 17:00 | ±2 jam | Ekonomi |
-| Malang | 07:00, 10:00, 14:00, 17:00 | ±2 jam | Ekonomi |
+Jadwal keberangkatan dari Cirebon:
+- 07.00 WIB — Terminal Harjamukti
+- 13.00 WIB — Terminal Harjamukti
+- 17.00 WIB — Terminal Harjamukti
 
-### Koridor Medan — Padang
-| Keberangkatan | Waktu | Durasi | Kelas |
-|--------------|-------|--------|-------|
-| Medan | 08:00, 15:00 | ±8 jam | Bisnis |
-| Padang | 07:00, 14:00 | ±8 jam | Bisnis |
+3. BANDUNG ↔ YOGYAKARTA
+Estimasi perjalanan: 8 jam
+Jadwal keberangkatan dari Bandung:
+- 20.00 WIB — Terminal Leuwi Panjang (night trip)
 
-Catatan: Jadwal dapat berubah tanpa pemberitahuan. Hubungi CS untuk konfirmasi terbaru.
+Jadwal keberangkatan dari Yogyakarta:
+- 20.00 WIB — Terminal Giwangan (night trip)
+
+4. BANDUNG ↔ SEMARANG
+Estimasi perjalanan: 7 jam
+Jadwal keberangkatan dari Bandung:
+- 19.00 WIB — Terminal Leuwi Panjang (night trip)
+
+Jadwal keberangkatan dari Semarang:
+- 19.00 WIB — Terminal Terboyo (night trip)
+
+Catatan Penting:
+- Waktu keberangkatan bisa berubah karena kondisi lalu lintas.
+- Penumpang diharapkan datang 30 menit sebelum jadwal.
+- Untuk night trip, penumpang disarankan membawa selimut sendiri (tersedia di kelas Executive).

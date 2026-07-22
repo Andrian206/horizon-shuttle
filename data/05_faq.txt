@@ -1,37 +1,65 @@
-# FAQ — Horizon Shuttle
+HORIZON SHUTTLE — FREQUENTLY ASKED QUESTIONS (FAQ)
 
-## Umum
+BAGASI
+Q: Berapa batas bagasi yang diperbolehkan?
+A: Batas bagasi bervariasi sesuai kelas:
+   - Economy: 20 kg + kabin 7 kg
+   - Business: 30 kg + kabin 10 kg
+   - Executive: 40 kg + kabin 15 kg
 
-**Q: Bagaimana cara memesan tiket Horizon Shuttle?**
-A: Anda dapat memesan melalui website resmi, aplikasi mobile Horizon Shuttle, call center 0800-1234-5678, atau datang langsung ke counter kami di terminal.
+Q: Bagaimana jika bagasi melebihi batas?
+A: Biaya kelebihan bagasi Rp 15.000 per kg.
 
-**Q: Berapa jam sebelum keberangkatan saya harus check-in?**
-A: Disarankan check-in 30 menit sebelum jadwal keberangkatan untuk rute reguler.
+Q: Apakah boleh membawa barang pecah belah?
+A: Boleh, asalkan dikemas dengan aman. Horizon Shuttle tidak bertanggung jawab atas kerusakan barang pecah belah.
 
-**Q: Apakah tiket dapat dibatalkan?**
-A: Pembatalan dapat dilakukan:
-- ≥ 24 jam sebelum: refund 80% dari harga tiket
-- 12-24 jam sebelum: refund 50%
-- < 12 jam: tidak dapat refund
-- Tiket dapat direschedule tanpa biaya hingga 2 jam sebelum keberangkatan
+REFUND
+Q: Bagaimana cara refund tiket?
+A: Refund dapat diajukan minimal 24 jam sebelum keberangkatan melalui:
+   - WhatsApp: 0812-3456-7890
+   - Email: refund@horizonshuttle.id
+   - Aplikasi/website (jika tersedia)
 
-**Q: Bagaimana jika shuttle mengalami delay?**
-A: Jika delay > 30 menit karena pihak kami, Anda berhak:
-- Snack dan minuman gratis
-- Jika delay > 2 jam: kompensasi voucher 25% untuk perjalanan berikutnya
+Q: Berapa biaya refund?
+A: Biaya administrasi refund 20% dari harga tiket. Dana dikembalikan dalam 3-5 hari kerja.
 
-## Bagasi
+Q: Apakah bisa refund setelah keberangkatan?
+A: Tidak bisa. Refund hanya untuk tiket yang belum digunakan.
 
-**Q: Berapa batas bagasi yang diperbolehkan?**
-A: Setiap penumpang berhak membawa 20 kg bagasi. Kelebihan dikenakan biaya Rp5.000/kg.
+RESCHEDULE
+Q: Bagaimana cara reschedule?
+A: Reschedule bisa dilakukan maksimal 4 jam sebelum keberangkatan dengan biaya administrasi Rp 25.000.
 
-**Q: Apakah hewan peliharaan diperbolehkan?**
-A: Hanya hewan kecil dalam carrier yang diperbolehkan di kelas Eksekutif dengan biaya tambahan Rp50.000.
+Q: Berapa kali reschedule diperbolehkan?
+A: Maksimal 1x per tiket.
 
-## Lainnya
+PEMBAYARAN
+Q: Metode pembayaran apa saja yang diterima?
+A: Transfer bank, QRIS, e-wallet (GoPay, OVO, DANA, LinkAja), dan kartu kredit.
 
-**Q: Apakah ada asuransi perjalanan?**
-A: Ya, setiap tiket sudah termasuk asuransi perjalanan dari Asuransi Jasindo.
+Q: Apakah ada DP (uang muka)?
+A: Ya, DP minimal 50% dari total harga. Pelunasan maksimal 2 jam sebelum keberangkatan.
 
-**Q: Fasilitas apa saja yang tersedia di shuttle?**
-A: Tergantung kelas yang dipilih. Semua kelas dilengkapi AC. Eksekutif dan Bisnis mendapat tambahan USB charger, WiFi, dan hiburan.
+PEMBATALAN
+Q: Bagaimana jika bus dibatalkan oleh Horizon Shuttle?
+A: Penumpang akan mendapat:
+   - Refund 100% tanpa biaya administrasi, ATAU
+   - Reschedule gratis ke jadwal lain.
+
+CHECK-IN
+Q: Kapan harus check-in?
+A: Penumpang diharapkan datang 30 menit sebelum jadwal keberangkatan.
+
+Q: Apa yang perlu dibawa saat check-in?
+A: Kode booking (digital/print) dan identitas diri (KTP/SIM/Passport).
+
+BARANG HILANG
+Q: Bagaimana jika ada barang tertinggal?
+A: Hubungi customer service segera:
+   - Telepon: 022-1234-5678
+   - WhatsApp: 0812-3456-7890
+   Barang yang ditemukan akan disimpan selama 30 hari.
+
+HEWAN PELIHARAAN
+Q: Boleh membawa hewan peliharaan?
+A: Hewan kecil dalam kandang (kucing, kelinci) diperbolehkan dengan biaya tambahan Rp 50.000. Anjing hanya diperbolehkan dalam kandang ukuran kecil.

@@ -1,27 +1,46 @@
-# Kebijakan Perusahaan — Horizon Shuttle
+HORIZON SHUTTLE — COMPANY POLICIES
 
-## Kebijakan Keselamatan
-1. Semua penumpang WAJIB menggunakan sabuk keselamatan selama perjalanan
-2. Dilarang merokok di dalam kendaraan
-3. Dilarang membawa minuman keras dan obat-obatan terlarang
-4. Dalam kondisi darurat, ikuti instruksi kru
-5. Pintu darurat hanya boleh dibuka dalam keadaan darurat
+KEBIJAKAN REFUND
+1. Refund dapat diajukan minimal 24 jam sebelum jadwal keberangkatan.
+2. Biaya administrasi refund: 20% dari harga tiket.
+3. Dana refund akan dikembalikan dalam 3-5 hari kerja ke rekening/rekening e-wallet asal pembayaran.
+4. Refund tidak berlaku untuk tiket yang sudah digunakan atau melewati jadwal keberangkatan.
+5. Dalam kasus pembatalan dari pihak Horizon Shuttle, refund 100% tanpa biaya administrasi.
 
-## Kebijakan Pembatalan & Refund
-- Lihat FAQ untuk detail pembatalan
-- Refund diproses dalam 3×24 jam ke rekening asal pembayaran
-- Pembatalan massal (≥10 tiket) dikenakan biaya administrasi tambahan 5%
+KEBIJAKAN RESCHEDULE
+1. Reschedule dapat dilakukan maksimal 4 jam sebelum keberangkatan.
+2. Biaya administrasi reschedule: Rp 25.000 per tiket.
+3. Reschedule hanya diperbolehkan 1x per tiket.
+4. Reschedule ke hari yang sama atau berbeda diperbolehkan, tergantung ketersediaan kursi.
+5. Reschedule tidak berlaku untuk tiket promo tertentu (akan diinformasikan saat pembelian).
 
-## Kebijakan Anak
-- Anak di bawah 2 tahun: gratis (duduk di pangkuan orang tua)
-- Anak 2-12 tahun: diskon 50% dari harga tiket
-- Wajib didampingi orang dewasa (≥17 tahun)
+KEBIJAKAN BAGASI
+1. Bagasi gratis sesuai kelas layanan (lihat Service Catalog).
+2. Kelebihan bagasi dikenakan biaya Rp 15.000 per kg.
+3. Barang berharga (emas, perhiasan, uang tunai) disarankan tidak dimasukkan ke bagasi.
+4. Horizon Shuttle tidak bertanggung jawab atas kehilangan barang berharga di bagasi.
+5. Barang terlarang: senjata, bahan peledak, narkoba, dan barang ilegal lainnya.
 
-## Kebijakan Privasi
-- Data pelanggan hanya digunakan untuk keperluan pelayanan
-- Horizon Shuttle tidak akan membagikan data pelanggan kepada pihak ketiga tanpa izin
+KEBIJAKAN KETERLAMBATAN
+1. Keterlambatan keberangkatan karena faktor cuaca atau lalu lintas:
+   - Horizon Shuttle akan memberikan informasi terkini melalui WhatsApp/SMS.
+   - Penumpang berhak reschedule gratis atau refund penuh.
+2. Keterlambatan penumpang:
+   - Penumpang yang terlambat lebih dari 15 menit dianggap no-show.
+   - Tiket hangus dan tidak bisa refund.
+3. Keterlambatan kedatangan:
+   - Estimasi waktu hanya perkiraan. Horizon Shuttle tidak bertanggung jawab atas kerugian akibat keterlambatan kedatangan.
 
-## Kebijakan Lingkungan
-- Mengurangi penggunaan plastik sekali pakai di armada
-- Program daur ulang di kantor pusat
-- Target netral karbon pada tahun 2030
+KEBIJAKAN KOMPENSASI
+1. Kompensasi diberikan dalam bentuk:
+   - Voucher perjalanan (nominal sesuai ketentuan)
+   - Refund parsial (untuk kasus tertentu)
+   - Upgrade kelas gratis (jika tersedia)
+2. Kompensasi tidak berlaku untuk keterlambatan akibat force majeure (bencana alam, kerusuhan, dll).
+3. Klaim kompensasi harus diajukan dalam 7 hari setelah kejadian.
+
+KEBIJAKAN KEAMANAN
+1. Setiap penumpang wajib menunjukkan identitas saat check-in.
+2. Bagasi akan diperiksa secara acak untuk keamanan.
+3. Dilarang membawa barang terlarang (senjata, bahan peledak, narkoba).
+4. Pelanggaran keamanan akan dilaporkan ke pihak berwenang.

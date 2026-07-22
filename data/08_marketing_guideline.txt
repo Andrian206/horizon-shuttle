@@ -1,34 +1,50 @@
-# Marketing Guideline — Horizon Shuttle
+HORIZON SHUTTLE — MARKETING GUIDELINE
 
-## Brand Voice
-- **Nada**: Profesional namun ramah
-- **Gaya**: Informatif, meyakinkan, mudah dipahami
-- **Target Audiens**: Profesional muda (25-40 tahun), keluarga, wisatawan domestik
+BRAND IDENTITY
 
-## Brand Identity
-- **Warna Primer**: Biru (#0050cb), Putih
-- **Warna Sekunder**: Cyan (#00dbe9), Abu-abu muda
-- **Font**: Manrope (headline), Inter (body)
-- **Tagline**: "Travel Smarter with Horizon Shuttle"
+Brand Personality
+- Trustworthy: Pelanggan bisa percaya pada keselamatan dan kenyamanan.
+- Friendly: Pendekatan yang hangat dan tidak kaku.
+- Professional: Layanan berkualitas dengan standar tinggi.
+- Innovative: Selalu mengadopsi teknologi terbaru untuk kenyamanan.
 
-## Social Media Presence
-Platform aktif: Instagram, Facebook, Twitter/X, TikTok
+Tone of Voice
+- Bahasa: Indonesia (utama), English (opsional untuk turis).
+- Gaya: Conversational, tidak terlalu formal tapi tetap profesional.
+- Hindari: bahasa yang menyinggung, klaim berlebihan, perbandingan negatif dengan kompetitor.
 
-### Konten yang diposting
-- Promo tiket (diskon, early bird, bundle)
-- Info rute dan jadwal terbaru
-- Testimoni pelanggan
-- Tips perjalanan
-- CSR activities
+Warna Brand
+- Primary: #0050CB (Biru Horizon)
+- Secondary: #00DBE9 (Cyan)
+- Accent: #A33200 (Oranye hangat)
+- Neutral: #F7F9FB (Putih kebiruan)
 
-### Frekuensi Posting
-1440p (Instagram/Facebook/TikTok): 3-5x per minggu
-- Stories: setiap hari
-- Twitter: 2-3x per hari
+CALL TO ACTION (CTA)
+- Primary: "Pesan Sekarang", "Booking Tiket"
+- Secondary: "Cek Jadwal", "Hubungi Kami"
+- Soft: "Pelajari Lebih Lanjut", "Lihat Rute"
 
-## Promosi & Diskon
-1. **Early Bird**: Diskon 15% untuk pemesanan H-7
-2. **Happy Hour**: Diskon 10% setiap hari jam 10.00-12.00 (pemesanan online)
-3. **Referral Program**: Dapatkan voucher Rp25.000 untuk setiap teman yang mendaftar dan melakukan pemesanan
-4. **Corporate Discount**: Diskon khusus untuk pemesanan corporate minimal 10 tiket/bulan
-5. **Loyalty Program**: Setiap 10 kali perjalanan dapat 1 tiket gratis (kelas Ekonomi)
+TARGET MARKET
+1. Primary: Pelajar & mahasiswa (18-25 tahun) — harga terjangkau, rute Bandung-Jakarta.
+2. Secondary: Pekerja kantoran (25-40 tahun) — kelas Business, door-to-door.
+3. Tertiary: Keluarga & turis (30-50 tahun) — kelas Executive, rute wisata.
+
+CHANNEL MARKETING
+1. Instagram: Konten visual armada, rute, testimoni. Posting 1x/hari.
+2. TikTok: Video pendek perjalanan, tips traveling, behind the scenes. Posting 3x/minggu.
+3. WhatsApp Broadcast: Promo, pengumuman, reminder. Kirim 2x/minggu.
+4. Email Newsletter: Update bulanan, promo eksklusif.
+5. Google My Business: Update jam, foto, respon review.
+
+JENIS KONTEN
+1. Edukasi: Tips traveling, packing tips, info rute.
+2. Promosi: Diskon, bundle, early bird.
+3. Testimoni: Review pelanggan, before-after.
+4. Behind the Scenes: Perawatan armada, training sopir.
+5. Interactive: Poll, quiz, giveaway.
+
+KEBIJAKAN PROMO
+- Promo tidak boleh lebih dari 50% dari harga normal.
+- Periode promo minimal 3 hari, maksimal 14 hari.
+- Promo tidak berlaku untuk hari libur nasional (kecuali dinyatakan).
+- Promo tidak bisa digabung dengan promo lain.

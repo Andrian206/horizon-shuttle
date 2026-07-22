@@ -1,29 +1,48 @@
-# Katalog Layanan — Horizon Shuttle
+HORIZON SHUTTLE — SERVICE CATALOG
 
-## Layanan Utama
+Kami menyediakan tiga kelas layanan untuk memenuhi kebutuhan perjalanan Anda:
 
-### 1. Shuttle Antar Kota
-Layanan shuttle reguler yang menghubungkan kota-kota utama di Pulau Jawa.
-- Eksekutif: AC, reclining seat, snack, WiFi
-- Bisnis: AC, legroom luas, WiFi
-- Ekonomi: AC, nyaman, harga terjangkau
+1. ECONOMY CLASS
+Harga: Rp 150.000 per orang per trip
+Fasilitas:
+- AC (Air Conditioner)
+- Kursi konfigurasi 2-2 (4 kursi per baris)
+- Snack dan air mineral
+- USB charging port per kursi
+- Bagasi kabin 7 kg + bagasi 20 kg
+- Musik dan hiburan ringan
 
-### 2. Shuttle Bandara
-Layanan antar jemput bandara dengan jadwal yang disesuaikan dengan jadwal penerbangan.
+2. BUSINESS CLASS
+Harga: Rp 250.000 per orang per trip
+Fasilitas:
+- AC premium dengan filter udara
+- Kursi konfigurasi 2-1 (3 kursi per baris, lebih lega)
+- Kursi reclining dengan footrest
+- TV layar sentuh per kursi
+- Meal box (makanan ringan + minum)
+- USB charging port + colokan listrik
+- WiFi onboard
+- Bagasi kabin 10 kg + bagasi 30 kg
+- Prioritas boarding
 
-### 3. Shuttle Korporasi
-Layanan khusus untuk perusahaan dengan kebutuhan transportasi karyawan secara rutin.
+3. EXECUTIVE CLASS
+Harga: Rp 400.000 per orang per trip
+Fasilitas:
+- AC premium dengan ionizer
+- Kursi konfigurasi 1-1 (2 kursi per baris, sangat lega)
+- Kursi full reclining (hampir flat)
+- TV layar besar per kursi dengan konten premium
+- Meal box lengkap (makanan berat + minum + dessert)
+- USB charging + colokan listrik + wireless charging
+- WiFi onboard high-speed
+- Selimut dan bantal
+- Bagasi kabin 15 kg + bagasi 40 kg
+- Priority boarding + priority check-in
+- Lounge access (di terminal tertentu)
+- Gratis snack dan minum sepanjang perjalanan
 
-### 4. Shuttle Wisata
-Paket transportasi untuk grup wisata dengan rute khusus destinasi wisata.
-
-## Layanan Tambahan
-- **Door to Door**: Penjemputan dan pengantaran dari/ke alamat pelanggan
-- **Cargo**: Pengiriman paket bersamaan dengan jadwal shuttle
-- **Car Rental**: Penyewaan mobil dengan atau tanpa sopir
-
-## Metode Pembayaran
-- Transfer bank (BCA, Mandiri, BRI, BNI)
-- E-wallet (GoPay, OVO, Dana, LinkAja)
-- Kartu kredit (Visa, Mastercard)
-- Bayar di tempat (cash)
+Ketentuan Umum
+- Anak di bawah 3 tahun: gratis (tidak mendapat kursi)
+- Anak 3-10 tahun: diskon 30% dari harga dewasa
+- Pemesanan minimal 2 jam sebelum keberangkatan
+- Reschedule bisa dilakukan maksimal 1x dengan biaya administrasi Rp 25.000

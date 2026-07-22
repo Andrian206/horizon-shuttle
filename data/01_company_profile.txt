@@ -1,28 +1,33 @@
-# Profil Perusahaan — Horizon Shuttle
+HORIZON SHUTTLE — COMPANY PROFILE
 
-## Nama Perusahaan
-Horizon Shuttle
+Tentang Kami
+Horizon Shuttle adalah perusahaan jasa transportasi shuttle antar kota yang berdiri sejak tahun 2018. Didirikan oleh Bapak Ahmad Rizky di Bandung, Jawa Barat, dengan visi menjadi penyedia layanan shuttle terpercaya dan nyaman di Indonesia.
 
-## Visi
-Menjadi penyedia layanan transportasi shuttle terdepan di Indonesia yang mengutamakan keselamatan, kenyamanan, dan ketepatan waktu.
+Visi
+Menjadi perusahaan shuttle antar kota terdepan yang mengutamakan keselamatan, kenyamanan, dan kepuasan pelanggan.
 
-## Misi
-1. Menyediakan layanan transportasi shuttle yang aman, nyaman, dan tepat waktu
-2. Menggunakan armada modern dengan standar perawatan tertinggi
-3. Memberikan pengalaman pelanggan yang luar biasa melalui layanan yang profesional
-4. Mendukung konektivitas antar kota di Pulau Jawa dan Sumatera
+Misi
+1. Memberikan layanan transportasi yang aman, nyaman, dan tepat waktu.
+2. Menggunakan armada berkualitas dengan perawatan rutin.
+3. Mengutamakan kepuasan pelanggan melalui pelayanan profesional.
+4. Terus berinovasi dalam teknologi dan layanan untuk kemudahan pelanggan.
 
-## Sejarah
-Horizon Shuttle didirikan pada tahun 2018 dan mulai beroperasi dengan 5 unit armada. Saat ini kami mengoperasikan lebih dari 50 unit armada yang melayani 15 rute antar kota.
+Nilai Perusahaan
+- Safety First: Keselamatan adalah prioritas utama.
+- Customer Centric: Pelanggan adalah pusat dari setiap keputusan.
+- Integrity: Jujur dan transparan dalam setiap layanan.
+- Excellence: Selalu berusaha memberikan yang terbaik.
 
-## Nilai-nilai Perusahaan
-- **Safety First** — Keselamatan adalah prioritas utama
-- **Customer Focus** — Pelanggan adalah pusat dari setiap keputusan
-- **Integrity** — Kejujuran dan transparansi dalam setiap tindakan
-- **Innovation** — Terus berinovasi untuk layanan yang lebih baik
-- **Teamwork** — Bekerja sama untuk mencapai yang terbaik
+Kontak
+- Telepon: 022-1234-5678
+- WhatsApp: 0812-3456-7890
+- Email: info@horizonshuttle.id
+- Website: www.horizonshuttle.id
 
-## Info Kontak
-- Customer Service: cs@horizonshuttle.co.id
-- Call Center: 0800-1234-5678
-- Alamat Kantor Pusat: Jl. Merdeka No. 45, Jakarta Pusat
+Jam Operasional
+- Senin – Jumat: 05.00 – 22.00 WIB
+- Sabtu: 05.00 – 20.00 WIB
+- Minggu & Hari Libur Nasional: 06.00 – 18.00 WIB
+
+Kantor Pusat
+Jl. Soekarno-Hatta No. 123, Bandung, Jawa Barat 40266

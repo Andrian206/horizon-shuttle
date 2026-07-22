@@ -1,32 +1,59 @@
-# SOP Customer Service — Horizon Shuttle
+HORIZON SHUTTLE — CUSTOMER SERVICE SOP
 
-## Standar Pelayanan
+STANDAR PELAYANAN CUSTOMER SERVICE
 
-### 1. Menjawab Telefon
-- Angkat dalam 3 nada dering pertama
-- Salam: "Selamat [pagi/siang/sore], Horizon Shuttle Customer Service, [nama] di sini. Ada yang bisa saya bantu?"
-- Gunakan nada bicara yang ramah dan profesional
-- Tutup: "Terima kasih telah menghubungi Horizon Shuttle, [nama pelanggan]. Selamat [pagi/siang/sore]."
+1. TONE OF VOICE
+- Ramah dan sopan dalam setiap interaksi.
+- Gunakan bahasa Indonesia yang baik dan benar.
+- Hindari bahasa gaul yang berlebihan, kecuali sesuai konteks pelanggan.
+- Selalu sapa pelanggan: "Selamat [pagi/siang/sore/malam], Horizon Shuttle siap membantu."
+- Akhiri dengan: "Terima kasih telah memilih Horizon Shuttle. Ada yang lain bisa kami bantu?"
 
-### 2. Menangani Keluhan
-1. Dengarkan keluhan tanpa memotong
-2. Minta maaf dengan tulus
-3. Catat detail keluhan di sistem
-4. Berikan solusi sesuai kewenangan
-5. Jika perlu eskalasi, informasikan batas waktu penanganan
+2. WAKTU RESPON
+- Chat/WhatsApp: maksimal 5 menit pada jam operasional.
+- Email: maksimal 24 jam.
+- Telepon: diangkat dalam 3 dering.
 
-### 3. Pelayanan Email/Chat
-- Waktu respons maksimal: 1 jam (jam kerja)
-- Jam kerja: Senin-Sabtu, 07:00-20:00
-- Template email formal dengan tanda tangan termasuk nama, jabatan, dan kontak
+3. MENANGANI KOMPLAIN
+Langkah-langkah:
+   a. Dengarkan keluhan pelanggan dengan penuh perhatian.
+   b. Ucapkan permintaan maaf atas ketidaknyamanan.
+   c. Konfirmasi pemahaman: "Jadi yang Bapak/Ibu maksud adalah..."
+   d. Tawarkan solusi sesuai kebijakan perusahaan.
+   e. Jika solusi tidak memungkinkan, eskalasi ke supervisor.
+   f. Follow up dalam 24 jam setelah penyelesaian.
 
-### 4. Penanganan Komplain Khusus
-- **Komplain besar**: Eskalasi ke supervisor dalam 30 menit
-- **Kecelakaan/darurat**: Informasikan manajer operasional segera
-- **Kehilangan barang**: Catat detail barang, rute, jam keberangkatan. Konfirmasi dalam 24 jam
+4. MENANGANI REFUND REQUEST
+   a. Verifikasi data pemesanan (kode booking, nama, tanggal).
+   b. Periksa apakah masih dalam batas waktu refund (24 jam sebelum keberangkatan).
+   c. Jelaskan biaya administrasi 20%.
+   d. Konfirmasi rekening pengembalian dana.
+   e. Proses refund dan berikan estimasi waktu (3-5 hari kerja).
+   f. Kirimkan bukti pengajuan refund via email/WhatsApp.
 
-### 5. Jam Operasional Customer Service
-- Call center: 24 jam, 7 hari seminggu
-- Live chat website: 06:00-22.00 setiap hari
-- Email: dibalas dalam 1 jam (jam kerja)
-- Kantor: Senin-Jumat, 08:00-17:00
+5. MENANGANI RESCHEDULE REQUEST
+   a. Verifikasi data pemesanan.
+   b. Periksa ketersediaan kursi di jadwal baru.
+   c. Jelaskan biaya administrasi Rp 25.000.
+   d. Konfirmasi jadwal baru dengan pelanggan.
+   e. Kirimkan tiket baru via email/WhatsApp.
+
+6. MENANGANI BARANG HILANG
+   a. Catat detail barang (jenis, warna, ciri khas, perkiraan lokasi tertinggal).
+   b. Hubungi tim operasional untuk pengecekan armada.
+   c. Berikan estimasi waktu pengecekan (2-4 jam).
+   d. Jika ditemukan, informasikan cara pengambilan:
+      - Ambil di kantor pusat, atau
+      - Kirim via kurir (biaya ditanggung pemilik).
+   e. Jika tidak ditemukan, berikan surat keterangan kehilangan.
+
+7. ESCALATION MATRIX
+   - Level 1: Customer Service (komplain umum, refund, reschedule)
+   - Level 2: Supervisor (komplain berat, kompensasi, kecelakaan)
+   - Level 3: Manager (kasus hukum, media, kebijakan khusus)
+
+8. JAM OPERASIONAL CS
+   - Senin–Jumat: 05.00–22.00 WIB
+   - Sabtu: 05.00–20.00 WIB
+   - Minggu & Libur: 06.00–18.00 WIB
+   - Luar jam operasional: auto-reply + follow up pagi hari.

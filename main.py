@@ -40,7 +40,6 @@ JWT_EXPIRE_HOURS = 8
 # ═══════════════════════════════════════════════════════════════
 genai.configure(api_key=GEMINI_API_KEY)
 
-embedding_model = genai.GenerativeModel("models/gemini-embedding-001")
 chat_model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
 # ═══════════════════════════════════════════════════════════════
@@ -134,12 +133,20 @@ async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(H
 
 
 def embed_text(text: str) -> list:
-    """Ubah teks jadi vector embedding pakai Gemini Embedding 001."""
+    """Ubah teks menjadi vector embedding Gemini."""
     try:
-        result = embedding_model.embed_content(content=text)
-        return result.embedding
+        result = genai.embed_content(
+            model="models/gemini-embedding-001",
+            content=text,
+            task_type="retrieval_query"
+        )
+        return result["embedding"]
+
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Gagal embed teks: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Gagal embed teks: {e}"
+        )
 
 
 def query_astra(vector: list, category_filter: List[str], top_k: int = 5):

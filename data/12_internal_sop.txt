@@ -1,53 +1,91 @@
-# SOP Internal — Horizon Shuttle
+HORIZON SHUTTLE — INTERNAL SOP
 
-## 1. Prosedur Check-in Penumpang
-1. Petugas menyapa penumpang dengan ramah
-2. Verifikasi tiket (kode booking/nama)
-3. Cetak boarding pass
-4. Timbang dan tag bagasi jika perlu
-5. Arahkan penumpang ke area tunggu
-6. Umumkan panggilan boarding 5 menit sebelum keberangkatan
+SOP 1: BUS TERLAMBAT
+1. Identifikasi penyebab keterlambatan (lalu lintas, cuaca, armada rusak).
+2. Informasikan ke penumpang via WhatsApp/SMS minimal 30 menit sebelum jadwal.
+3. Berikan estimasi waktu keberangkatan baru.
+4. Tawarkan opsi:
+   a. Tunggu keberangkatan baru
+   b. Reschedule gratis ke jadwal lain
+   c. Refund penuh (jika keterlambatan > 2 jam)
+5. Dokumentasikan insiden untuk laporan.
+6. Berikan kompensasi sesuai kebijakan:
+   - 30-60 menit: voucher Rp 25.000
+   - 1-2 jam: voucher Rp 50.000
+   - >2 jam: refund penuh + voucher Rp 50.000
 
-## 2. Prosedur Keberangkatan Shuttle
-1. Kru melakukan pre-trip inspection (checklist 32 poin)
-2. Pastikan semua bagasi masuk dengan aman
-3. Hitung jumlah penumpang sesuai manifest
-4. Umumkan peraturan keselamatan
-5. Pastikan semua penumpang menggunakan sabuk keselamatan
-6. Laporkan keberangkatan ke pusat kontrol
+SOP 2: ARMADA RUSAK DI TENGAH PERJALANAN
+1. Sopir segera berhenti di tempat aman.
+2. Hubungi tim operasional untuk bantuan.
+3. Informasikan penumpang dengan tenang dan jelas.
+4. Tawarkan:
+   a. Tunggu armada pengganti (estimasi 1-2 jam)
+   b. Refund penuh + transportasi alternatif
+5. Dokumentasikan kerusakan untuk maintenance.
+6. Pastikan penumpang aman dan nyaman selama menunggu.
 
-## 3. Prosedur Darurat
-### Kebakaran
-1. Hentikan kendaraan di tempat aman
-2. Matikan mesin
-3. Evakuasi penumpang melalui pintu darurat
-4. Gunakan APAR jika api masih kecil
-5. Hubungi pemadam kebakaran dan pusat kontrol
+SOP 3: PROSES REFUND INTERNAL
+1. CS terima request refund dari pelanggan.
+2. Verifikasi data pemesanan di sistem.
+3. Periksa apakah masih dalam batas waktu (24 jam sebelum keberangkatan).
+4. Jika lolos verifikasi:
+   a. Hitung refund: harga tiket - 20% biaya admin
+   b. Input ke sistem refund
+   c. Proses ke finance dalam 24 jam
+   d. Finance transfer dalam 3-5 hari kerja
+   e. Kirimkan bukti transfer ke pelanggan
+5. Jika tidak lolos verifikasi:
+   a. Jelaskan alasan penolakan
+   b. Tawarkan opsi reschedule
 
-### Kecelakaan Lalu Lintas
-1. Hentikan kendaraan, nyalakan lampu hazard
-2. Pastikan tidak ada korban jiwa
-3. Hubungi ambulans (119) jika ada luka
-4. Hubungi kantor pusat
-5. Jangan tinggalkan lokasi kecelakaan
-6. Siapkan dokumen untuk kepolisian
+SOP 4: KEHILANGAN BARANG PENUMPANG
+1. CS catat detail barang dan data penumpang.
+2. Hubungi sopir dan tim cleaning untuk pengecekan armada.
+3. Berikan estimasi waktu pengecekan (2-4 jam).
+4. Jika ditemukan:
+   a. Foto barang dan kirim ke penumpang untuk konfirmasi
+   b. Simpan di kantor pusat (maksimal 30 hari)
+   c. Informasikan cara pengambilan atau pengiriman
+5. Jika tidak ditemukan:
+   a. Berikan surat keterangan kehilangan
+   b. Tawarkan kompensasi sesuai kebijakan (jika berlaku)
 
-### Penumpang Sakit
-1. Hentikan di rest area terdekat
-2. Berikan pertolongan pertama
-3. Hubungi ambulans jika parah
-4. Koordinasikan penjemputan penumpang lain jika perlu
+SOP 5: MENANGANI KOMPLAIN BERAT
+1. Dengarkan dengan empati, jangan interupsi.
+2. Ucapkan permintaan maaf yang tulus.
+3. Konfirmasi pemahaman keluhan.
+4. Tawarkan solusi sesuai kebijakan.
+5. Jika penumpang tidak puas dengan solusi:
+   a. Eskalasi ke supervisor dalam 15 menit
+   b. Supervisor ambil alih penanganan
+   c. Jika masih tidak puas, eskalasi ke manager
+6. Follow up dalam 24 jam.
+7. Dokumentasikan seluruh insiden.
 
-## 4. Prosedur Kebersihan Armada
-- Setiap kali tiba di terminal: pembersihan interior dasar
-- Setiap 2 hari: pembersihan mendalam (deep clean)
-- Setiap minggu: fogging/disinfeksi
-- Setiap bulan: pembersihan kursi dan karpet profesional
+SOP 6: KECELAKAAN / EMERGENCY
+1. Prioritaskan keselamatan penumpang dan crew.
+2. Hubungi emergency services (119 / 110).
+3. Hubungi tim operasional dan manajemen.
+4. Dokumentasikan kejadian (foto, video, saksi).
+5. Berikan pernyataan resmi sesuai arahan manajemen.
+6. Koordinasi dengan asuransi.
+7. Berikan support psikologis kepada penumpang (jika diperlukan).
+8. Lakukan investigasi internal.
+9. Update SOP berdasarkan lesson learned.
 
-## 5. Pelaporan Harian
-Setiap kru wajib melaporkan:
-- Kilometer awal dan akhir shift
-- Konsumsi BBM
-- Kondisi kendaraan (jika ada masalah)
-- Insiden atau kejadian khusus selama perjalanan
-- Umpan balik penumpang yang menonjol
+SOP 7: PERAWATAN ARMADA
+1. Pemeriksaan harian (pre-trip):
+   - Ban, oli, rem, lampu
+   - AC, audio, TV
+   - Kebersihan interior
+   - Kelengkapan safety (APAR, P3K, palu pemecah kaca)
+2. Perawatan rutin (setiap 5.000 km):
+   - Ganti oli dan filter
+   - Periksa rem dan kopling
+   - Periksa sistem kelistrikan
+   - Cuci AC
+3. Perawatan besar (setiap 50.000 km):
+   - Overhaul mesin
+   - Ganti sparepart yang aus
+   - Pengecekan sistem keseluruhan
+4. Dokumentasikan semua perawatan.
