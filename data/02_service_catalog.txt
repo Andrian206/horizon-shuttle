@@ -1,0 +1,29 @@
+# Katalog Layanan — Horizon Shuttle
+
+## Layanan Utama
+
+### 1. Shuttle Antar Kota
+Layanan shuttle reguler yang menghubungkan kota-kota utama di Pulau Jawa.
+- Eksekutif: AC, reclining seat, snack, WiFi
+- Bisnis: AC, legroom luas, WiFi
+- Ekonomi: AC, nyaman, harga terjangkau
+
+### 2. Shuttle Bandara
+Layanan antar jemput bandara dengan jadwal yang disesuaikan dengan jadwal penerbangan.
+
+### 3. Shuttle Korporasi
+Layanan khusus untuk perusahaan dengan kebutuhan transportasi karyawan secara rutin.
+
+### 4. Shuttle Wisata
+Paket transportasi untuk grup wisata dengan rute khusus destinasi wisata.
+
+## Layanan Tambahan
+- **Door to Door**: Penjemputan dan pengantaran dari/ke alamat pelanggan
+- **Cargo**: Pengiriman paket bersamaan dengan jadwal shuttle
+- **Car Rental**: Penyewaan mobil dengan atau tanpa sopir
+
+## Metode Pembayaran
+- Transfer bank (BCA, Mandiri, BRI, BNI)
+- E-wallet (GoPay, OVO, Dana, LinkAja)
+- Kartu kredit (Visa, Mastercard)
+- Bayar di tempat (cash)

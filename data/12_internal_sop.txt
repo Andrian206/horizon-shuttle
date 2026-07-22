@@ -1,0 +1,53 @@
+# SOP Internal — Horizon Shuttle
+
+## 1. Prosedur Check-in Penumpang
+1. Petugas menyapa penumpang dengan ramah
+2. Verifikasi tiket (kode booking/nama)
+3. Cetak boarding pass
+4. Timbang dan tag bagasi jika perlu
+5. Arahkan penumpang ke area tunggu
+6. Umumkan panggilan boarding 5 menit sebelum keberangkatan
+
+## 2. Prosedur Keberangkatan Shuttle
+1. Kru melakukan pre-trip inspection (checklist 32 poin)
+2. Pastikan semua bagasi masuk dengan aman
+3. Hitung jumlah penumpang sesuai manifest
+4. Umumkan peraturan keselamatan
+5. Pastikan semua penumpang menggunakan sabuk keselamatan
+6. Laporkan keberangkatan ke pusat kontrol
+
+## 3. Prosedur Darurat
+### Kebakaran
+1. Hentikan kendaraan di tempat aman
+2. Matikan mesin
+3. Evakuasi penumpang melalui pintu darurat
+4. Gunakan APAR jika api masih kecil
+5. Hubungi pemadam kebakaran dan pusat kontrol
+
+### Kecelakaan Lalu Lintas
+1. Hentikan kendaraan, nyalakan lampu hazard
+2. Pastikan tidak ada korban jiwa
+3. Hubungi ambulans (119) jika ada luka
+4. Hubungi kantor pusat
+5. Jangan tinggalkan lokasi kecelakaan
+6. Siapkan dokumen untuk kepolisian
+
+### Penumpang Sakit
+1. Hentikan di rest area terdekat
+2. Berikan pertolongan pertama
+3. Hubungi ambulans jika parah
+4. Koordinasikan penjemputan penumpang lain jika perlu
+
+## 4. Prosedur Kebersihan Armada
+- Setiap kali tiba di terminal: pembersihan interior dasar
+- Setiap 2 hari: pembersihan mendalam (deep clean)
+- Setiap minggu: fogging/disinfeksi
+- Setiap bulan: pembersihan kursi dan karpet profesional
+
+## 5. Pelaporan Harian
+Setiap kru wajib melaporkan:
+- Kilometer awal dan akhir shift
+- Konsumsi BBM
+- Kondisi kendaraan (jika ada masalah)
+- Insiden atau kejadian khusus selama perjalanan
+- Umpan balik penumpang yang menonjol

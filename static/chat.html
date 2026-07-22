@@ -1,37 +1,213 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon AI</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0050cb",
+                        "on-primary": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "on-surface-variant": "#424656",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "primary-container": "#0066ff",
+                        "on-primary-container": "#f8f7ff",
+                        "outline": "#727687"
+                    },
+                    fontFamily: {
+                        "body": ["Inter"],
+                        "headline": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .bg-ethereal-gradient {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e0f7fa 50%, #f5f5f5 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .glass-input {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 0.9);
+            border-color: #0050cb;
+            box-shadow: 0 0 0 3px rgba(0, 80, 203, 0.1);
+        }
+        @keyframes message-pop {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .message-anim {
+            animation: message-pop 0.3s ease-out;
+        }
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+        .loading-dot {
+            animation: bounce 1.4s infinite ease-in-out both;
+            width: 8px; height: 8px;
+            background: #0050cb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .loading-dot:nth-child(1) { animation-delay: -0.32s; }
+        .loading-dot:nth-child(2) { animation-delay: -0.16s; }
+        .custom-scroll::-webkit-scrollbar { width: 6px; }
+        .custom-scroll::-webkit-scrollbar-track { background: transparent; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 3px; }
+    </style>
 </head>
-<body class="bg-gray-100 h-screen flex flex-col">
+
+<body class="bg-ethereal-gradient min-h-screen font-body text-on-surface flex flex-col">
+
     <!-- Header -->
-    <header class="bg-blue-600 text-white p-4">
-        <h1>✨ Horizon AI</h1>
-        <p>Asisten virtual Horizon Shuttle</p>
+    <header class="w-full bg-surface/40 backdrop-blur-xl border-b border-white/20 shadow-sm z-50">
+        <div class="flex justify-between items-center px-4 h-14">
+            <div class="flex items-center gap-3">
+                <a href="/static/index.html" class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors p-1">arrow_back</a>
+                <span class="material-symbols-outlined text-primary">smart_toy</span>
+                <div>
+                    <h1 class="text-base font-headline font-bold text-on-surface">Horizon AI</h1>
+                    <p class="text-xs text-on-surface-variant">Asisten virtual Horizon Shuttle</p>
+                </div>
+            </div>
+            <a href="/static/login.html" class="text-sm text-primary hover:bg-primary/10 px-3 py-1.5 rounded-lg transition-colors">
+                Workspace
+            </a>
+        </div>
     </header>
-    
+
     <!-- Chat Area -->
-    <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4">
-        <!-- Messages will be appended here -->
-    </div>
-    
-    <!-- Input Area -->
-    <div class="bg-white p-4 border-t">
-        <div class="flex gap-2">
-            <input type="text" id="chat-input" 
-                   placeholder="Tanya tentang Horizon Shuttle..." 
-                   class="flex-1 border rounded-lg px-4 py-2">
-            <button onclick="sendMessage()" 
-                    class="bg-blue-600 text-white px-6 py-2 rounded-lg">
-                Kirim
-            </button>
+    <div id="chat-messages" class="flex-1 overflow-y-auto custom-scroll p-4 space-y-4">
+        <!-- Welcome Message -->
+        <div class="message-anim flex justify-start w-full">
+            <div class="max-w-[85%] md:max-w-[70%] p-3.5 rounded-2xl bg-white/60 backdrop-blur-sm text-on-surface border border-white/40 rounded-bl-md text-sm leading-relaxed">
+                <p class="font-semibold mb-1">👋 Halo! Saya Horizon AI</p>
+                <p>Saya bisa membantu kamu dengan informasi tentang Horizon Shuttle:</p>
+                <ul class="mt-2 space-y-1 ml-4 list-disc">
+                    <li>Harga tiket & jadwal</li>
+                    <li>Layanan & armada</li>
+                    <li>Promo terbaru</li>
+                    <li>Kebijakan & FAQ</li>
+                </ul>
+                <p class="mt-2">Ada yang bisa saya bantu?</p>
+            </div>
         </div>
     </div>
-    
-    <script src="/static/js/chat-public.js"></script>
+
+    <!-- Input Area -->
+    <div class="p-4 bg-white/30 backdrop-blur-xl border-t border-white/40">
+        <div class="max-w-4xl mx-auto">
+            <div class="relative flex items-end glass-input rounded-xl p-2 focus-within:ring-2 focus-within:ring-primary/10 transition-all">
+                <textarea id="chat-input" 
+                          class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface py-2 px-2 resize-none placeholder:text-on-surface-variant/50 font-body text-base max-h-32"
+                          oninput="autoResize(this)"
+                          onkeydown="handleKeyDown(event)"
+                          placeholder="Tanya tentang Horizon Shuttle..."
+                          rows="1"></textarea>
+                <button onclick="sendMessage()" id="send-btn"
+                        class="bg-primary hover:bg-primary/90 text-on-primary h-10 w-10 rounded-xl flex items-center justify-center shadow-md active:scale-90 transition-all disabled:opacity-50">
+                    <span class="material-symbols-outlined">arrow_upward</span>
+                </button>
+            </div>
+            <!-- Loading -->
+            <div id="loading" class="hidden flex items-center gap-2 mt-2 px-2">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <span class="text-xs text-on-surface-variant">Horizon AI sedang berpikir...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = '/api/chat';
+        let isLoading = false;
+
+        function autoResize(t) {
+            t.style.height = 'auto';
+            t.style.height = Math.min(t.scrollHeight, 128) + 'px';
+        }
+
+        function handleKeyDown(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        }
+
+        function showLoading(show) {
+            document.getElementById('loading').classList.toggle('hidden', !show);
+            document.getElementById('send-btn').disabled = show;
+            isLoading = show;
+        }
+
+        function appendMessage(role, text) {
+            const container = document.getElementById('chat-messages');
+            const div = document.createElement('div');
+            div.className = `message-anim flex ${role === 'user' ? 'justify-end' : 'justify-start'} w-full`;
+            
+            const bubble = document.createElement('div');
+            bubble.className = `max-w-[85%] md:max-w-[70%] p-3.5 rounded-2xl text-sm leading-relaxed ${
+                role === 'user' 
+                    ? 'bg-primary text-on-primary rounded-br-md' 
+                    : 'bg-white/60 backdrop-blur-sm text-on-surface border border-white/40 rounded-bl-md'
+            }`;
+            bubble.innerHTML = text.replace(/\\n/g, '<br>');
+            
+            div.appendChild(bubble);
+            container.appendChild(div);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            if (!message || isLoading) return;
+
+            input.value = '';
+            input.style.height = 'auto';
+            appendMessage('user', message);
+            showLoading(true);
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({message: message})
+                });
+                
+                const data = await response.json();
+                appendMessage('assistant', data.reply);
+                
+            } catch (error) {
+                appendMessage('assistant', 'Maaf, terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                showLoading(false);
+            }
+        }
+    </script>
 </body>
 </html>

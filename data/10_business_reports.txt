@@ -1,0 +1,38 @@
+# Laporan Bisnis — Horizon Shuttle
+
+## Ringkasan Kinerja (H1 2026 — Januari s.d. Juni)
+
+### Pendapatan
+| Bulan | Pendapatan | Target | % Tercapai |
+|-------|-----------|--------|-----------|
+| Jan | Rp 1,2 M | Rp 1,1 M | 109% |
+| Feb | Rp 1,0 M | Rp 1,0 M | 100% |
+| Mar | Rp 1,4 M | Rp 1,3 M | 108% |
+| Apr | Rp 1,3 M | Rp 1,2 M | 108% |
+| Mei | Rp 1,5 M | Rp 1,4 M | 107% |
+| Jun | Rp 1,8 M | Rp 1,5 M | 120% |
+
+**Total Pendapatan H1 2026**: Rp 8,2 Miliar (dari target Rp 7,5 Miliar)
+**Rata-rata occupancy rate**: 76%
+
+### Rute Terlaris (by revenue)
+1. Jakarta - Bandung: 28% dari total pendapatan
+2. Jakarta - Surabaya: 22%
+3. Jakarta - Semarang: 15%
+4. Bandung - Yogyakarta: 12%
+5. Surabaya - Malang: 10%
+6. Medan - Padang: 8%
+7. Lainnya: 5%
+
+### Biaya Operasional (Bulan Juni 2026)
+- Bahan bakar: Rp 420 Juta (42%)
+- Gaji awak: Rp 250 Juta (25%)
+- Perawatan armada: Rp 150 Juta (15%)
+- Marketing: Rp 100 Juta (10%)
+- Operasional kantor: Rp 80 Juta (8%)
+
+## Proyeksi H2 2026
+- Target revenue: Rp 10 Miliar
+- Rute baru: Jakarta - Bali (mulai Oktober)
+- Penambahan armada: 10 unit (Q3)
+- Ekspansi layanan cargo ke Sumatera

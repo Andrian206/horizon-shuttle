@@ -1,0 +1,35 @@
+# Informasi Armada — Horizon Shuttle
+
+## Tipe Armada
+
+### 1. Hino S'elega (Eksekutif)
+- Kapasitas: 31 kursi (2-1 konfigurasi)
+- Fasilitas: Reclining seat 145°, TV pribadi, USB charger, toilet, AC double blower, snack box
+- Cocok untuk: Rute jarak jauh
+
+### 2. Hino RN8 (Bisnis)
+- Kapasitas: 39 kursi (2-2 konfigurasi)
+- Fasilitas: Legroom luas, USB charger, AC, WiFi, entertainment system
+- Cocok untuk: Rute menengah dan jauh
+
+### 3. Isuzu NQR (Ekonomi)
+- Kapasitas: 49 kursi (3-2 konfigurasi)
+- Fasilitas: AC, USB charger, bagasi luas, harga terjangkau
+- Cocok untuk: Rute pendek dan menengah
+
+## Armada Khusus
+- **Shuttle Bandara**: Toyota Hiace Premio, 12 kursi
+- **Shuttle Korporasi**: Mercedes-Benz Sprinter, 19 kursi
+
+## Perawatan Armada
+- Setiap unit menjalani perawatan rutin setiap 5.000 km
+- Pemeriksaan menyeluruh setiap 10.000 km di bengkel resmi
+- Inspeksi keselamatan sebelum setiap keberangkatan (checklist 32 poin)
+- Penggantian ban setiap 20.000 km
+- Armada di bawah 3 tahun penggunaan
+
+## Jumlah Total Armada Aktif: 52 unit
+- Eksekutif: 15 unit
+- Bisnis: 20 unit
+- Ekonomi: 12 unit
+- Khusus: 5 unit

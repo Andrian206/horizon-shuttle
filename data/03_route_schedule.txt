@@ -1,0 +1,41 @@
+# Jadwal Rute — Horizon Shuttle
+
+## Rute Aktif (Jadwal Reguler)
+
+### Koridor Jakarta — Bandung
+| Keberangkatan | Waktu | Durasi | Kelas |
+|--------------|-------|--------|-------|
+| Jakarta (Gambir) | 06:00, 09:00, 12:00, 15:00, 18:00 | ±3 jam | Eksekutif, Bisnis |
+| Bandung | 06:00, 09:00, 12:00, 15:00, 18:00 | ±3 jam | Eksekutif, Bisnis |
+
+### Koridor Jakarta — Surabaya
+| Keberangkatan | Waktu | Durasi | Kelas |
+|--------------|-------|--------|-------|
+| Jakarta | 07:00, 13:00, 19:00 | ±9 jam | Eksekutif |
+| Surabaya | 07:00, 13:00, 19:00 | ±9 jam | Eksekutif |
+
+### Koridor Bandung — Yogyakarta
+| Keberangkatan | Waktu | Durasi | Kelas |
+|--------------|-------|--------|-------|
+| Bandung | 08:00, 14:00 | ±5 jam | Bisnis, Ekonomi |
+| Yogyakarta | 08:00, 14:00 | ±5 jam | Bisnis, Ekonomi |
+
+### Koridor Jakarta — Semarang
+| Keberangkatan | Waktu | Durasi | Kelas |
+|--------------|-------|--------|-------|
+| Jakarta | 06:30, 11:00, 16:30 | ±6 jam | Bisnis, Ekonomi |
+| Semarang | 06:30, 11:00, 16:30 | ±6 jam | Bisnis, Ekonomi |
+
+### Koridor Surabaya — Malang
+| Keberangkatan | Waktu | Durasi | Kelas |
+|--------------|-------|--------|-------|
+| Surabaya | 07:00, 10:00, 14:00, 17:00 | ±2 jam | Ekonomi |
+| Malang | 07:00, 10:00, 14:00, 17:00 | ±2 jam | Ekonomi |
+
+### Koridor Medan — Padang
+| Keberangkatan | Waktu | Durasi | Kelas |
+|--------------|-------|--------|-------|
+| Medan | 08:00, 15:00 | ±8 jam | Bisnis |
+| Padang | 07:00, 14:00 | ±8 jam | Bisnis |
+
+Catatan: Jadwal dapat berubah tanpa pemberitahuan. Hubungi CS untuk konfirmasi terbaru.
