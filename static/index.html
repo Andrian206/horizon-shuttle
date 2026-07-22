@@ -4,24 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon Shuttle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Link ke CSS custom kamu dari Figma/Stitch -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0050cb",
+                        "on-primary": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "on-surface-variant": "#424656",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "primary-container": "#0066ff",
+                        "on-primary-container": "#f8f7ff",
+                        "outline": "#727687"
+                    },
+                    fontFamily: {
+                        "body": ["Inter"],
+                        "headline": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-ethereal-gradient {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e0f7fa 50%, #f5f5f5 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .btn-glow {
+            background: linear-gradient(135deg, #0066ff, #0050cb);
+            box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 8px 30px rgba(0, 102, 255, 0.4);
+            transform: translateY(-1px);
+        }
+        .btn-ghost {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, 0.5);
+            border-color: rgba(0, 80, 203, 0.3);
+        }
+        @keyframes blob-float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        .animate-blob {
+            animation: blob-float 15s ease-in-out infinite;
+        }
+        .blob-1 { animation-delay: 0s; }
+        .blob-2 { animation-delay: -5s; }
+        .blob-3 { animation-delay: -10s; }
+    </style>
 </head>
-<body>
+<body class="bg-ethereal-gradient min-h-screen font-body text-on-surface overflow-x-hidden">
+
+    <!-- Background Blobs -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute top-[10%] left-[15%] w-[400px] h-[400px] bg-primary/20 blur-[100px] rounded-full animate-blob blob-1"></div>
+        <div class="absolute top-[40%] right-[15%] w-[350px] h-[350px] bg-cyan-200/20 blur-[90px] rounded-full animate-blob blob-2"></div>
+        <div class="absolute bottom-[10%] left-[30%] w-[500px] h-[500px] bg-blue-400/20 blur-[120px] rounded-full animate-blob blob-3"></div>
+    </div>
+
     <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Travel Smarter with Horizon Shuttle</h1>
-        <p>Safe. Comfortable. Reliable.</p>
-        <div class="cta-buttons">
-            <a href="/static/chat.html" class="btn-primary">✨ Horizon AI</a>
-            <a href="/static/login.html" class="btn-secondary">Business Workspace</a>
+    <section class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-6">
+        <div class="glass-panel rounded-[2.5rem] p-10 md:p-16 max-w-2xl shadow-[0_20px_60px_rgba(0,0,0,0.06)] border border-white/50 backdrop-blur-xl">
+
+            <!-- Icon -->
+            <div class="w-20 h-20 mx-auto mb-8 bg-white/60 backdrop-blur-md rounded-[20px] border border-white/60 shadow-lg flex items-center justify-center">
+                <span class="material-symbols-outlined text-4xl text-primary">directions_bus</span>
+            </div>
+
+            <h1 class="font-headline text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-3">
+                Horizon <span class="text-primary">Shuttle</span>
+            </h1>
+            <p class="font-body text-lg text-on-surface-variant/80 max-w-md mx-auto mb-10 leading-relaxed">
+                Safe. Comfortable. Reliable.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/static/chat.html" class="btn-glow text-on-primary px-8 py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 active:scale-95 transition-all">
+                    <span class="material-symbols-outlined text-lg">smart_toy</span>
+                    Horizon AI
+                </a>
+                <a href="/static/login.html" class="btn-ghost text-on-surface px-8 py-4 rounded-xl font-bold text-base flex items-center justify-center gap-2 active:scale-95 transition-all">
+                    <span class="material-symbols-outlined text-lg">business</span>
+                    Business Workspace
+                </a>
+            </div>
         </div>
+
+        <!-- Footer -->
+        <p class="mt-12 text-sm text-on-surface-variant/50">&copy; 2026 Horizon Shuttle. All rights reserved.</p>
     </section>
-    
-    <!-- SECTION LAINNYA: About, Routes, Fleet, FAQ, Footer -->
-    <!-- Copy dari desain Figma/Stitch kamu -->
-    
-    <script src="/static/js/utils.js"></script>
+
 </body>
 </html>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon AI</title>
-    
+
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -34,8 +34,115 @@
                 }
             }
         }
+
+        // Simple markdown to HTML converter (no dependencies)
+        function mdToHtml(text) {
+            const lines = text.split('\n');
+            let html = '';
+            let inLi = false;
+            let listType = null;
+
+            function closeListTag() {
+                if (inLi) {
+                    html += '</li>\n';
+                    inLi = false;
+                }
+                html += (listType === 'ol' ? '</ol>\n' : (listType === 'ul' ? '</ul>\n' : ''));
+                listType = null;
+            }
+
+            function inlineFormat(s) {
+                s = s.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                s = s.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                s = s.replace(/\*(.*?)\*/g, '<em>$1</em>');
+                s = s.replace(/`(.*?)`/g, '<code>$1</code>');
+                return s;
+            }
+
+            for (let line of lines) {
+                const trimmed = line.trim();
+                let indent = line.search(/\S/);
+                if (indent === -1) indent = 0;
+
+                // Empty line
+                if (trimmed === '') {
+                    if (inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType) { html += (listType === 'ol' ? '</ol>\n' : '</ul>\n'); listType = null; }
+                    continue;
+                }
+
+                // Separator
+                if (/^-{3,}$/.test(trimmed)) {
+                    if (inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType) { html += (listType === 'ol' ? '</ol>\n' : '</ul>\n'); listType = null; }
+                    html += '<hr>';
+                    continue;
+                }
+
+                // Heading
+                let m;
+                if ((m = trimmed.match(/^#### (.+)$/))) {
+                    if (inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType) { html += (listType === 'ol' ? '</ol>\n' : '</ul>\n'); listType = null; }
+                    html += '<h4>' + inlineFormat(m[1]) + '</h4>';
+                    continue;
+                }
+                if ((m = trimmed.match(/^### (.+)$/))) {
+                    if (inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType) { html += (listType === 'ol' ? '</ol>\n' : '</ul>\n'); listType = null; }
+                    html += '<h3>' + inlineFormat(m[1]) + '</h3>';
+                    continue;
+                }
+                if ((m = trimmed.match(/^## (.+)$/))) {
+                    if (inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType) { html += (listType === 'ol' ? '</ol>\n' : '</ul>\n'); listType = null; }
+                    html += '<h2>' + inlineFormat(m[1]) + '</h2>';
+                    continue;
+                }
+                if ((m = trimmed.match(/^# (.+)$/))) {
+                    if (inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType) { html += (listType === 'ol' ? '</ol>\n' : '</ul>\n'); listType = null; }
+                    html += '<h1>' + inlineFormat(m[1]) + '</h1>';
+                    continue;
+                }
+
+                // Numbered list item
+                if ((m = trimmed.match(/^\d+[.)]\s+(.+)/))) {
+                    if (listType === 'ul' && inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType !== 'ol') { closeListTag(); html += '<ol>\n'; listType = 'ol'; }
+                    if (inLi) { html += '</li>\n'; }
+                    const prefix = indent > 2 ? ' style="margin-left:' + (indent) + 'px"' : '';
+                    html += '<li' + prefix + '>' + inlineFormat(m[1]);
+                    inLi = true;
+                    continue;
+                }
+
+                // Bullet list item
+                if ((m = trimmed.match(/^[-*]\s+(.+)/))) {
+                    if (listType === 'ol' && inLi) { html += '</li>\n'; inLi = false; }
+                    if (listType !== 'ul') { closeListTag(); html += '<ul>\n'; listType = 'ul'; }
+                    if (inLi) { html += '</li>\n'; }
+                    const prefix = indent > 2 ? ' style="margin-left:' + (indent) + 'px"' : '';
+                    html += '<li' + prefix + '>' + inlineFormat(m[1]);
+                    inLi = true;
+                    continue;
+                }
+
+                // Regular paragraph line (inline)
+                if (inLi) { html += '</li>\n'; inLi = false; }
+                if (listType) { html += (listType === 'ol' ? '</ol>\n' : '</ul>\n'); listType = null; }
+                html += '<p>' + inlineFormat(trimmed) + '</p>\n';
+            }
+
+            // Close any open tags
+            if (inLi) html += '</li>\n';
+            if (listType === 'ol') html += '</ol>\n';
+            if (listType === 'ul') html += '</ul>\n';
+
+            return html;
+        }
     </script>
-    
+
     <style>
         .bg-ethereal-gradient {
             background: linear-gradient(135deg, #f0f4ff 0%, #e0f7fa 50%, #f5f5f5 100%);
@@ -77,13 +184,22 @@
         .custom-scroll::-webkit-scrollbar { width: 6px; }
         .custom-scroll::-webkit-scrollbar-track { background: transparent; }
         .custom-scroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 3px; }
+        .chat-message ul, .chat-message ol { margin: 0.4rem 0; padding-left: 1.25rem; }
+        .chat-message li { margin: 0.2rem 0; }
+        .chat-message strong { font-weight: 600; }
+        .chat-message p { margin: 0.3rem 0; }
+        .chat-message code { background: rgba(0,0,0,0.06); padding: 0.1rem 0.3rem; border-radius: 4px; font-size: 0.85em; }
+        .chat-message h2, .chat-message h3 { font-family: 'Manrope', sans-serif; font-weight: 700; margin: 0.6rem 0 0.3rem; }
+        .chat-message h3 { font-size: 1rem; }
+        .chat-message h2 { font-size: 1.1rem; }
+        .chat-message hr { border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 0.6rem 0; }
     </style>
 </head>
 
-<body class="bg-ethereal-gradient min-h-screen font-body text-on-surface flex flex-col">
+<body class="bg-ethereal-gradient h-screen font-body text-on-surface flex flex-col overflow-hidden">
 
     <!-- Header -->
-    <header class="w-full bg-surface/40 backdrop-blur-xl border-b border-white/20 shadow-sm z-50">
+    <header class="w-full bg-surface/40 backdrop-blur-xl border-b border-white/20 shadow-sm z-50 shrink-0">
         <div class="flex justify-between items-center px-4 h-14">
             <div class="flex items-center gap-3">
                 <a href="/static/index.html" class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors p-1">arrow_back</a>
@@ -99,29 +215,31 @@
         </div>
     </header>
 
-    <!-- Chat Area -->
-    <div id="chat-messages" class="flex-1 overflow-y-auto custom-scroll p-4 space-y-4">
-        <!-- Welcome Message -->
-        <div class="message-anim flex justify-start w-full">
-            <div class="max-w-[85%] md:max-w-[70%] p-3.5 rounded-2xl bg-white/60 backdrop-blur-sm text-on-surface border border-white/40 rounded-bl-md text-sm leading-relaxed">
-                <p class="font-semibold mb-1">👋 Halo! Saya Horizon AI</p>
-                <p>Saya bisa membantu kamu dengan informasi tentang Horizon Shuttle:</p>
-                <ul class="mt-2 space-y-1 ml-4 list-disc">
-                    <li>Harga tiket & jadwal</li>
-                    <li>Layanan & armada</li>
-                    <li>Promo terbaru</li>
-                    <li>Kebijakan & FAQ</li>
-                </ul>
-                <p class="mt-2">Ada yang bisa saya bantu?</p>
+    <!-- Chat Area (scrollable, centered) -->
+    <div class="flex-1 flex flex-col min-h-0 w-full max-w-4xl mx-auto px-4">
+        <div id="chat-messages" class="flex-1 overflow-y-auto custom-scroll space-y-4 py-4 min-h-0">
+            <!-- Welcome Message -->
+            <div class="message-anim flex justify-start w-full">
+                <div class="max-w-[85%] md:max-w-[70%] p-3.5 rounded-2xl bg-white/60 backdrop-blur-sm text-on-surface border border-white/40 rounded-bl-md text-sm leading-relaxed">
+                    <p class="font-semibold mb-1">👋 Halo! Saya Horizon AI</p>
+                    <p>Saya bisa membantu kamu dengan informasi tentang Horizon Shuttle:</p>
+                    <ul class="mt-2 space-y-1 ml-4 list-disc">
+                        <li>Harga tiket & jadwal</li>
+                        <li>Layanan & armada</li>
+                        <li>Promo terbaru</li>
+                        <li>Kebijakan & FAQ</li>
+                    </ul>
+                    <p class="mt-2">Ada yang bisa saya bantu?</p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Input Area -->
-    <div class="p-4 bg-white/30 backdrop-blur-xl border-t border-white/40">
+    <div class="p-4 bg-white/30 backdrop-blur-xl border-t border-white/40 shrink-0">
         <div class="max-w-4xl mx-auto">
             <div class="relative flex items-end glass-input rounded-xl p-2 focus-within:ring-2 focus-within:ring-primary/10 transition-all">
-                <textarea id="chat-input" 
+                <textarea id="chat-input"
                           class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface py-2 px-2 resize-none placeholder:text-on-surface-variant/50 font-body text-base max-h-32"
                           oninput="autoResize(this)"
                           onkeydown="handleKeyDown(event)"
@@ -168,15 +286,15 @@
             const container = document.getElementById('chat-messages');
             const div = document.createElement('div');
             div.className = `message-anim flex ${role === 'user' ? 'justify-end' : 'justify-start'} w-full`;
-            
+
             const bubble = document.createElement('div');
-            bubble.className = `max-w-[85%] md:max-w-[70%] p-3.5 rounded-2xl text-sm leading-relaxed ${
-                role === 'user' 
-                    ? 'bg-primary text-on-primary rounded-br-md' 
+            bubble.className = `max-w-[85%] md:max-w-[70%] p-3.5 rounded-2xl text-sm leading-relaxed chat-message ${
+                role === 'user'
+                    ? 'bg-primary text-on-primary rounded-br-md'
                     : 'bg-white/60 backdrop-blur-sm text-on-surface border border-white/40 rounded-bl-md'
             }`;
-            bubble.innerHTML = text.replace(/\\n/g, '<br>');
-            
+            bubble.innerHTML = mdToHtml(text);
+
             div.appendChild(bubble);
             container.appendChild(div);
             container.scrollTop = container.scrollHeight;
@@ -198,10 +316,10 @@
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({message: message})
                 });
-                
+
                 const data = await response.json();
                 appendMessage('assistant', data.reply);
-                
+
             } catch (error) {
                 appendMessage('assistant', 'Maaf, terjadi kesalahan. Silakan coba lagi.');
             } finally {

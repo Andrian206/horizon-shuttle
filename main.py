@@ -1,6 +1,6 @@
 """
 Horizon Shuttle AI — MVP Minimal Backend
-1 file, 3 endpoint, no database, hardcode login
+astrapy 2.3.1 compatible | 1 file, 3 endpoint, no database, hardcode login
 """
 
 import os
@@ -9,6 +9,7 @@ from typing import Optional, List
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Depends
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
@@ -26,12 +27,12 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 ASTRA_TOKEN = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
 ASTRA_ENDPOINT = os.getenv("ASTRA_DB_API_ENDPOINT")
-ASTRA_NAMESPACE = os.getenv("ASTRA_DB_NAMESPACE", "horizon_shuttle")
+ASTRA_NAMESPACE = os.getenv("ASTRA_DB_NAMESPACE", "default_keyspace")
 ASTRA_COLLECTION = os.getenv("ASTRA_DB_COLLECTION", "knowledge_chunks")
 
-ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin")
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "horizon2026")
-JWT_SECRET = os.getenv("JWT_SECRET", "ganti-ini-dengan-string-panjang-32-karakter")
+ADMIN_USERNAME = os.getenv("ADMIN_USERNAME")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
+JWT_SECRET = os.getenv("JWT_SECRET")
 JWT_ALGORITHM = "HS256"
 JWT_EXPIRE_HOURS = 8
 
@@ -40,13 +41,20 @@ JWT_EXPIRE_HOURS = 8
 # ═══════════════════════════════════════════════════════════════
 genai.configure(api_key=GEMINI_API_KEY)
 
-chat_model = genai.GenerativeModel("gemini-2.5-flash-lite")
+chat_model = genai.GenerativeModel("gemini-3.1-flash-lite")
 
 # ═══════════════════════════════════════════════════════════════
-# 3. INIT ASTRADB
+# 3. INIT ASTRADB (astrapy 2.3.1)
 # ═══════════════════════════════════════════════════════════════
-astra_client = DataAPIClient(ASTRA_TOKEN)
-db = astra_client.get_database_by_api_endpoint(ASTRA_ENDPOINT)
+# astrapy v2: token bisa di client ATAU di get_database
+astra_client = DataAPIClient()
+
+db = astra_client.get_database(
+    ASTRA_ENDPOINT,
+    token=ASTRA_TOKEN,
+    keyspace=ASTRA_NAMESPACE
+)
+
 collection = db.get_collection(ASTRA_COLLECTION)
 
 # ═══════════════════════════════════════════════════════════════
@@ -54,10 +62,8 @@ collection = db.get_collection(ASTRA_COLLECTION)
 # ═══════════════════════════════════════════════════════════════
 app = FastAPI(title="Horizon Shuttle AI", version="mvp-1.0")
 
-# Serve static files (frontend HTML/JS/CSS)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# CORS (allow all for MVP)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -75,7 +81,7 @@ class LoginRequest(BaseModel):
 
 class ChatRequest(BaseModel):
     message: str
-    mode: Optional[str] = "assistant"  # assistant | draft | insight
+    mode: Optional[str] = "assistant"
 
 class ChatResponse(BaseModel):
     reply: str
@@ -88,6 +94,7 @@ SYSTEM_PROMPTS = {
     "assistant": """Kamu adalah Horizon AI, asisten customer service Horizon Shuttle.
 Jawab berdasarkan informasi yang diberikan di KNOWLEDGE BASE.
 Gunakan bahasa Indonesia yang ramah, profesional, dan mudah dipahami.
+Gunakan format **Markdown** untuk mempercantik jawaban: **bold** untuk poin penting, --- untuk pemisah, - untuk bullet list, dan 1. untuk nomor urut.
 Jika informasi tidak tersedia di KNOWLEDGE BASE, katakan dengan sopan bahwa kamu belum memiliki informasi tersebut.
 Jangan menjawab berdasarkan pengetahuan umum di luar KNOWLEDGE BASE.""",
 
@@ -95,11 +102,13 @@ Jangan menjawab berdasarkan pengetahuan umum di luar KNOWLEDGE BASE.""",
 Tugasmu membuat draft materi promosi dan komunikasi sesuai kebutuhan user.
 Ikuti BRAND VOICE Horizon Shuttle: ramah, profesional, trustworthy, approachable.
 Format output sesuai jenis materi yang diminta (broadcast WhatsApp, email, caption IG, pengumuman, dll).
+Gunakan format **Markdown** agar output rapi: judul pakai ##, poin pakai -, bold untuk penekanan.
 Gunakan bahasa Indonesia yang natural dan engaging.""",
 
     "insight": """Kamu adalah Horizon AI Business Advisor, konsultan bisnis Horizon Shuttle.
 Analisis data dan berikan rekomendasi strategis dalam bentuk narasi yang mudah dipahami.
 Sertakan insight actionable, bukan sekadar angka.
+Gunakan format **Markdown** agar output rapi: ## untuk subjudul, **bold** untuk sorotan, --- untuk pemisah.
 Gunakan bahasa Indonesia profesional tapi tidak kaku.
 Berikan rekomendasi konkret yang bisa langsung dijalankan."""
 }
@@ -109,14 +118,12 @@ Berikan rekomendasi konkret yang bisa langsung dijalankan."""
 # ═══════════════════════════════════════════════════════════════
 
 def create_jwt_token(username: str) -> str:
-    """Buat JWT token untuk session login."""
     expire = datetime.utcnow() + timedelta(hours=JWT_EXPIRE_HOURS)
     payload = {"sub": username, "exp": expire}
     return jwt.encode(payload, JWT_SECRET, algorithm=JWT_ALGORITHM)
 
 
 def verify_jwt_token(token: str) -> Optional[str]:
-    """Verifikasi JWT token, return username kalau valid."""
     try:
         payload = jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGORITHM])
         return payload.get("sub")
@@ -125,7 +132,6 @@ def verify_jwt_token(token: str) -> Optional[str]:
 
 
 async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(HTTPBearer())):
-    """Dependency: verifikasi JWT dari header Authorization."""
     username = verify_jwt_token(credentials.credentials)
     if not username:
         raise HTTPException(status_code=401, detail="Token tidak valid atau sudah expired")
@@ -133,7 +139,6 @@ async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(H
 
 
 def embed_text(text: str) -> list:
-    """Ubah teks menjadi vector embedding Gemini."""
     try:
         result = genai.embed_content(
             model="models/gemini-embedding-001",
@@ -141,40 +146,35 @@ def embed_text(text: str) -> list:
             task_type="retrieval_query"
         )
         return result["embedding"]
-
     except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Gagal embed teks: {e}"
-        )
+        raise HTTPException(status_code=500, detail=f"Gagal embed teks: {e}")
 
 
 def query_astra(vector: list, category_filter: List[str], top_k: int = 5):
     """Cari chunk yang mirip di AstraDB dengan filter kategori."""
     try:
-        results = collection.find(
+        # astrapy v2: find() returns cursor, convert to list
+        cursor = collection.find(
             filter={"metadata.category": {"$in": category_filter}},
             sort={"$vector": vector},
             limit=top_k,
             include_similarity=True
         )
-        return list(results)
+        return list(cursor)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Gagal query AstraDB: {str(e)}")
 
 
 def build_prompt(query: str, chunks: list, mode: str) -> str:
-    """Gabungkan system prompt + konteks chunks + pertanyaan user."""
     system = SYSTEM_PROMPTS.get(mode, SYSTEM_PROMPTS["assistant"])
     
-    # Format chunks jadi string
     context_parts = []
     for i, chunk in enumerate(chunks, 1):
         text = chunk.get("text", "")
         source = chunk.get("metadata", {}).get("source", "unknown")
-        context_parts.append(f"[DOKUMEN {i} - {source}]\\n{text}")
-    
-    context = "\\n\\n".join(context_parts) if context_parts else "Tidak ada dokumen relevan ditemukan."
+        context_parts.append(f"[DOKUMEN {i} - {source}]\n{text}")
+
+    context = "\n\n".join(context_parts) if context_parts else "Tidak ada dokumen relevan ditemukan."
     
     prompt = f"""{system}
 
@@ -195,7 +195,6 @@ JAWABAN:"""
 
 
 def generate_reply(prompt: str) -> str:
-    """Generate jawaban pakai Gemini 2.5 Flash-Lite."""
     try:
         response = chat_model.generate_content(prompt)
         return response.text
@@ -204,45 +203,27 @@ def generate_reply(prompt: str) -> str:
 
 
 # ═══════════════════════════════════════════════════════════════
-# 8. RAG PIPELINE (Public & Workspace)
+# 8. RAG PIPELINE
 # ═══════════════════════════════════════════════════════════════
 
 def rag_pipeline(query: str, mode: str, user_type: str = "public") -> dict:
-    """
-    Pipeline RAG lengkap:
-    1. Embed query
-    2. Query AstraDB (filter by permission)
-    3. Build prompt
-    4. Generate reply
-    """
-    # Step 1: Embed query
     query_embedding = embed_text(query)
     
-    # Step 2: Tentukan filter kategori
     if user_type == "public":
         category_filter = ["public"]
     else:
         category_filter = ["public", "internal"]
     
-    # Step 3: Retrieve chunks dari AstraDB
     chunks = query_astra(query_embedding, category_filter, top_k=5)
-    
-    # Step 4: Build prompt dengan konteks
     prompt = build_prompt(query, chunks, mode)
-    
-    # Step 5: Generate jawaban
     reply = generate_reply(prompt)
     
-    # Step 6: Extract sources
     sources = list(set(
         chunk.get("metadata", {}).get("source", "unknown") 
         for chunk in chunks
     ))
     
-    return {
-        "reply": reply,
-        "sources": sources if sources else None
-    }
+    return {"reply": reply, "sources": sources if sources else None}
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -251,76 +232,43 @@ def rag_pipeline(query: str, mode: str, user_type: str = "public") -> dict:
 
 @app.get("/")
 def root():
-    """Health check endpoint."""
-    return {
-        "message": "Horizon Shuttle AI API",
-        "version": "mvp-1.0",
-        "status": "running"
-    }
+    return FileResponse("static/index.html")
 
 
 @app.post("/api/auth/login")
 def login(request: LoginRequest):
-    """
-    Login hardcode — cuma 1 akun dari .env.
-    Return JWT token kalau sukses.
-    """
     if request.username != ADMIN_USERNAME or request.password != ADMIN_PASSWORD:
         raise HTTPException(status_code=401, detail="Username atau password salah")
     
     token = create_jwt_token(request.username)
-    
     return {
         "access_token": token,
         "token_type": "bearer",
-        "user": {
-            "username": ADMIN_USERNAME,
-            "nama": "Admin Horizon"
-        }
+        "user": {"username": ADMIN_USERNAME, "nama": "Admin Horizon"}
     }
 
 
 @app.post("/api/chat", response_model=ChatResponse)
 def chat_public(request: ChatRequest):
-    """
-    PUBLIC CHAT — no auth required.
-    Selalu pakai mode "assistant" dan filter "public" chunks.
-    """
-    result = rag_pipeline(
-        query=request.message,
-        mode="assistant",  # Public selalu assistant
-        user_type="public"
-    )
-    
+    result = rag_pipeline(query=request.message, mode="assistant", user_type="public")
     return ChatResponse(reply=result["reply"], sources=result["sources"])
 
 
 @app.post("/api/workspace/chat", response_model=ChatResponse)
-def chat_workspace(
-    request: ChatRequest,
-    username: str = Depends(get_current_user)
-):
-    """
-    WORKSPACE CHAT — requires JWT auth.
-    Support 3 mode: assistant, draft, insight.
-    Filter chunks: public + internal.
-    """
-    # Validate mode
+def chat_workspace(request: ChatRequest, username: str = Depends(get_current_user)):
     if request.mode not in ["assistant", "draft", "insight"]:
         raise HTTPException(status_code=400, detail="Mode harus: assistant, draft, atau insight")
     
-    result = rag_pipeline(
-        query=request.message,
-        mode=request.mode,
-        user_type="business"
-    )
-    
+    result = rag_pipeline(query=request.message, mode=request.mode, user_type="business")
     return ChatResponse(reply=result["reply"], sources=result["sources"])
 
 
 # ═══════════════════════════════════════════════════════════════
-# 10. RUN (for local development)
+# 10. RUN
 # ═══════════════════════════════════════════════════════════════
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    import os
+    port = int(os.environ.get("PORT", 8000))
+    debug = os.environ.get("APP_ENV", "development") == "development"
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=debug)

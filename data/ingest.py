@@ -10,6 +10,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import google.generativeai as genai
 from astrapy import DataAPIClient
+from astrapy.exceptions import CollectionNotFoundException
 
 # ═══════════════════════════════════════════════════════════════
 # 1. LOAD ENV
@@ -19,7 +20,7 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 ASTRA_TOKEN = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
 ASTRA_ENDPOINT = os.getenv("ASTRA_DB_API_ENDPOINT")
-ASTRA_NAMESPACE = os.getenv("ASTRA_DB_NAMESPACE", "horizon_shuttle")
+ASTRA_NAMESPACE = os.getenv("ASTRA_DB_NAMESPACE", "default_keyspace")
 ASTRA_COLLECTION = os.getenv("ASTRA_DB_COLLECTION", "knowledge_chunks")
 
 # ═══════════════════════════════════════════════════════════════
@@ -27,14 +28,19 @@ ASTRA_COLLECTION = os.getenv("ASTRA_DB_COLLECTION", "knowledge_chunks")
 # ═══════════════════════════════════════════════════════════════
 genai.configure(api_key=GEMINI_API_KEY)
 
-astra_client = DataAPIClient(ASTRA_TOKEN)
-db = astra_client.get_database_by_api_endpoint(ASTRA_ENDPOINT)
+astra_client = DataAPIClient()
+
+db = astra_client.get_database(
+    ASTRA_ENDPOINT,
+    token=ASTRA_TOKEN,
+    keyspace=ASTRA_NAMESPACE
+)
 
 # Buat collection kalau belum ada
 try:
     collection = db.get_collection(ASTRA_COLLECTION)
     print(f"✅ Collection '{ASTRA_COLLECTION}' sudah ada")
-except:
+except CollectionNotFoundException:
     collection = db.create_collection(
         ASTRA_COLLECTION,
         dimension=3072,  # Gemini Embedding 001 default
